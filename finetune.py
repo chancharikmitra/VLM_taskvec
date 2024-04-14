@@ -124,8 +124,8 @@ def safe_save_model_for_hf_trainer(trainer: transformers.Trainer, output_dir: st
         trainer._save(output_dir, state_dict=state_dict)
 
 # CM - Changes to Data Preprocessing:
-# 1. Split at ICL Examples (add a split string? "\n " might be fine for now)
-# 2. Insert "<GIST>" in between ICL example and query (note: we should probably make gist_num a CLI arg for ablations at some point)
+# 1. Split between context and query (add a split string? "\n " might be fine for now)
+# 2. Insert "<GIST>" in between context and query (note: we should probably make gist_num a CLI arg for ablations at some point)
 # 3. Add gist mask for decoder models since Qwen is based on LLaMA
 
 def preprocess(
@@ -159,10 +159,10 @@ def preprocess(
         assert len(input_id) == len(target)
         for j, sentence in enumerate(source):
 
-            # CM - Split ICL example using split_string, and insert gist tokens
+            # CM - Split context and query using split_string, and insert gist tokens
             split_input = source[0]["value"].split(split_string)
 
-            assert len(split_input) == 2, "Input not properly formatted (i.e. ICL example not separated from query)"
+            assert len(split_input) == 2, "Input not properly formatted (i.e. Context not separated from query)"
 
             gist_buffer = gist_token * gist_num
             with_gist_input = gist_buffer.join(split_input)
