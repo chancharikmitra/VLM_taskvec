@@ -17,6 +17,9 @@ from transformers.trainer_pt_utils import LabelSmoother
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from accelerate.utils import DistributedType
 
+#CM - Import from gist.py
+import gist
+
 IGNORE_TOKEN_ID = LabelSmoother.ignore_index
 
 
@@ -120,12 +123,19 @@ def safe_save_model_for_hf_trainer(trainer: transformers.Trainer, output_dir: st
     if trainer.args.should_save and trainer.args.local_rank == 0:
         trainer._save(output_dir, state_dict=state_dict)
 
+# CM - Changes to Data Preprocessing:
+# 1. Split at ICL Examples (add a split string? "\n " might be fine for now)
+# 2. Insert "<GIST>" in between ICL example and query (note: we should probably make gist_num a CLI arg for ablations at some point)
+# 3. Add gist mask for decoder models since Qwen is based on LLaMA
 
 def preprocess(
-    sources,
+    sources, #List of conversation data
     tokenizer: transformers.PreTrainedTokenizer,
     max_len: int,
-    system_message: str = "You are a helpful assistant."
+    system_message: str = "You are a helpful assistant.",
+    split_string: str = "\n ",
+    gist_token: str = "<GIST>",
+    gist_num: int = 2
 ) -> Dict:
     roles = {"user": "<|im_start|>user", "assistant": "<|im_start|>assistant"}
 
@@ -139,7 +149,7 @@ def preprocess(
     # Apply prompt templates
     input_ids, targets = [], []
     for i, source in enumerate(sources):
-        if roles[source[0]["from"]] != roles["user"]:
+        if roles[source[0]["from"]] != roles["user"]: # CM - Note to self: I think this just ensures the conversation starts with "user" (not sure if this is necessary though)
             source = source[1:]
 
         input_id, target = [], []
@@ -148,6 +158,18 @@ def preprocess(
         target += [im_start] + [IGNORE_TOKEN_ID] * (len(system)-3) + [im_end] + nl_tokens
         assert len(input_id) == len(target)
         for j, sentence in enumerate(source):
+
+            # CM - Split ICL example using split_string, and insert gist tokens
+            split_input = source[0]["value"].split(split_string)
+
+            assert len(split_input) == 2, "Input not properly formatted (i.e. ICL example not separated from query)"
+
+            gist_buffer = gist_token * gist_num
+            with_gist_input = gist_buffer.join(split_input)
+            sentence["value"] = with_gist_input
+            #---------------
+            # CM - Following code shouldn't ideally affect things since Qwen has no knowledge of GIST tokens.
+
             role = roles[sentence["from"]]
             _input_id = tokenizer(role).input_ids + nl_tokens + \
                 tokenizer(sentence["value"]).input_ids + [im_end] + nl_tokens
@@ -168,10 +190,17 @@ def preprocess(
     input_ids = torch.tensor(input_ids, dtype=torch.int)
     targets = torch.tensor(targets, dtype=torch.int)
 
+
+    # CM - add gist mask
+
+    gist_tok_id = tokenizer.additional_special_tokens_ids[-1]
+    pad_tok_id = tokenizer.pad_token_id
+    gist_mask = gist.make_gist_mask(input_ids, gist_tok_id, pad_tok_id)
+
     return dict(
         input_ids=input_ids,
         labels=targets,
-        attention_mask=input_ids.ne(tokenizer.pad_token_id),
+        attention_mask=gist_mask,
     )
 
 
@@ -322,6 +351,20 @@ def train():
         trust_remote_code=True,
     )
     tokenizer.pad_token_id = tokenizer.eod_id
+
+
+    #-----CM - Adding Gist Token-----
+
+    #Add GIST as special token to tokenizer
+    tokenizer.add_special_tokens({"additional_special_tokens": ["<GIST>"]})
+    model.resize_token_embeddings(len(tokenizer))
+
+    # Set embedding layer weights to average according to https://nlp.stanford.edu/~johnhew/vocab-expansion.html
+    # Note: this is specific to Qwen architecture
+
+    model.wte.weight[-1] = model.wte.weight[:-1].mean(0)    
+    model.lm_head.weight[-1] = model.lm_head.weight[:-1].mean(0)
+    #--------------------------------
 
     if training_args.use_lora:
         if lora_args.q_lora or "chat" in model_args.model_name_or_path.lower():
