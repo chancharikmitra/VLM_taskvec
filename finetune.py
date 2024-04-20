@@ -121,6 +121,96 @@ def safe_save_model_for_hf_trainer(trainer: transformers.Trainer, output_dir: st
         trainer._save(output_dir, state_dict=state_dict)
 
 
+def create_task_vec_mask(input_ids, start_icl_idx, end_icl_idx, task_vec_idx):
+    """
+    Create a 3D task vector mask for the given input sequence.
+
+    Parameters:
+    - input_ids (List[int]): The list of tokenized input IDs.
+    - start_icl_idx (int): Start index of the range to mask.
+    - end_icl_idx (int): End index (exclusive) of the range to mask.
+    - task_vec_idx (int): Index of the task vector token.
+
+    Returns:
+    - torch.Tensor: The 3D attention mask of shape (1, seq_len, seq_len).
+    """
+    # Initialize mask
+    seq_len = len(input_ids)
+    attention_mask = torch.ones((1, seq_len, seq_len))
+
+    # Only task vector and ICL tokens should be able to attend to everything. Otherwise, mask ICL tokens
+    for i in range(seq_len):
+        if not (start_icl_idx <= i < end_icl_idx):
+            attention_mask[:, start_icl_idx:end_icl_idx, i] = 0  # Mask out the range for all other tokens
+            #attention_mask[:, i, start_icl_idx:end_icl_idx] = 0  # Mask out all other tokens for the range
+
+    attention_mask[:, task_vec_idx, :] = 1
+    attention_mask[:, :, task_vec_idx] = 1
+
+    # Make sure the sequence within the range can attend to itself - just a back up I suppose
+    attention_mask[:, start_icl_idx:end_icl_idx, start_icl_idx:end_icl_idx] = 1
+
+    return attention_mask
+
+def create_task_vec_mask_v2(input_ids, start_icl_idx, end_icl_idx, task_vec_idx, p=0.5):
+    """
+    Create a 3D task vector mask for the given input sequence.
+
+    Parameters:
+    - input_ids (List[int]): The list of tokenized input IDs.
+    - start_icl_idx (int): Start index of the range to mask.
+    - end_icl_idx (int): End index (exclusive) of the range to mask.
+    - task_vec_idx (int): Index of the task vector token.
+    - p (float): Probability threshold for a random mask on ICL tokens
+
+    Returns:
+    - torch.Tensor: The 3D attention mask of shape (1, seq_len, seq_len).
+    """
+    # Initialize mask
+    seq_len = len(input_ids)
+    attention_mask = torch.ones((1, seq_len, seq_len))
+
+    # Only task vector task vector attends to everything
+    # Here, we ensure that only ICL can attend to itself
+    for i in range(seq_len):
+        if not (start_icl_idx <= i < end_icl_idx):
+            attention_mask[:, start_icl_idx:end_icl_idx, i] = 0  # Mask out the range for all other tokens
+            attention_mask[:, i, start_icl_idx:end_icl_idx] = 0  # Mask out all other tokens for the range
+    
+    # Make sure taskvector can see everything
+    attention_mask[:, task_vec_idx, :] = 1
+    attention_mask[:, :, task_vec_idx] = 1
+
+    # Some ICL masking for robust representation learning
+    mask = (torch.rand(1, end_icl_idx - start_icl_idx) > p).float()
+    attention_mask[:, task_vec_idx, start_icl_idx:end_icl_idx] = mask
+    mask = mask.reshape((1, end_icl_idx - start_icl_idx))
+    attention_mask[:, start_icl_idx:end_icl_idx, task_vec_idx] = mask
+
+    # Make sure the sequence within the range can attend to itself - just a back up I suppose
+    attention_mask[:, start_icl_idx:end_icl_idx, start_icl_idx:end_icl_idx] = 1
+
+    return attention_mask
+
+
+
+def pad_attention_mask(attention_mask: torch.Tensor, max_len: int) -> torch.Tensor:
+    current_len = attention_mask.size(1)
+
+    if current_len == max_len:
+        return attention_mask
+
+    padding_size = max_len - current_len
+
+    padding_mask = torch.zeros((1, current_len, padding_size), dtype=torch.int)
+    new_attention_mask = torch.cat([attention_mask, padding_mask], dim=2)
+
+    vertical_padding = torch.zeros((1, padding_size, max_len), dtype=torch.int)
+    extended_attention_mask = torch.cat([new_attention_mask, vertical_padding], dim=1)
+
+    return extended_attention_mask
+
+
 def preprocess(
     sources,
     tokenizer: transformers.PreTrainedTokenizer,
@@ -148,10 +238,32 @@ def preprocess(
         target += [im_start] + [IGNORE_TOKEN_ID] * (len(system)-3) + [im_end] + nl_tokens
         assert len(input_id) == len(target)
         for j, sentence in enumerate(source):
+
+
+            ###BH
             role = roles[sentence["from"]]
-            _input_id = tokenizer(role).input_ids + nl_tokens + \
-                tokenizer(sentence["value"]).input_ids + [im_end] + nl_tokens
-            input_id += _input_id
+            if sentence["from"] == "assistant":
+                _input_id = tokenizer(role).input_ids + nl_tokens + \
+                    tokenizer(sentence["value"]).input_ids + [im_end] + nl_tokens
+                input_id += _input_id
+            else:
+                usr_ids = tokenizer(role).input_ids + nl_tokens
+                input_id += usr_ids
+                icl_ids = tokenizer(sentence["icl"]).input_ids
+                query_ids = tokenizer(sentence["query"]).input_ids
+
+                start_icl_idx = len(input_id)
+                end_icl_idx = start_icl_idx + len(icl_ids)
+                task_vec_idx = start_icl_idx + len(icl_ids) + len(query_ids) - 1
+
+                ##This is to preserve_input_id for _target
+                _input_id = usr_ids + icl_ids + query_ids + [im_end] + nl_tokens
+                ##Excluding usr_idx because already added
+                input_id += icl_ids + query_ids + [im_end] + nl_tokens
+            ###
+
+
+
             if role == '<|im_start|>user':
                 _target = [im_start] + [IGNORE_TOKEN_ID] * (len(_input_id)-3) + [im_end] + nl_tokens
             elif role == '<|im_start|>assistant':
@@ -161,6 +273,14 @@ def preprocess(
                 raise NotImplementedError
             target += _target
         assert len(input_id) == len(target)
+
+        ###BH
+
+        unpad_task_mask = create_task_vec_mask_v2(input_id, start_icl_idx, end_icl_idx, task_vec_idx)
+        padded_task_mask = pad_attention_mask(unpad_task_mask, max_len)[0]
+        ###BH
+
+
         input_id += [tokenizer.pad_token_id] * (max_len - len(input_id))
         target += [IGNORE_TOKEN_ID] * (max_len - len(target))
         input_ids.append(input_id[:max_len])
@@ -171,7 +291,7 @@ def preprocess(
     return dict(
         input_ids=input_ids,
         labels=targets,
-        attention_mask=input_ids.ne(tokenizer.pad_token_id),
+        attention_mask=padded_task_mask,
     )
 
 
@@ -241,6 +361,7 @@ def make_supervised_data_module(
     rank0_print("Loading data...")
 
     train_json = json.load(open(data_args.data_path, "r"))
+
     train_dataset = dataset_cls(train_json, tokenizer=tokenizer, max_len=max_len)
 
     if data_args.eval_data_path:
