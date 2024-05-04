@@ -56,7 +56,6 @@ def eval_reinforce(args):
         interv_answers.append({"answer":interv_out, "question_id":cur_item["question_id"]})
         clean_answers.append({"answer":clean_out, "question_id":cur_item["question_id"]})
 
-        print(interv_out)
 
         ##Calculate the accuracy of direct match
         if args.data_name == "flower":

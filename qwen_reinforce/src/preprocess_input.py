@@ -8,7 +8,7 @@ def nuscenes_icl(all_data, tokenizer, num_shot):
 
 def vizwiz_icl(all_data, tokenizer, num_shot):
 
-    prompt = '<img>/home/zhaobin/Qwen-VL/{}</img>{} Answer:'
+    prompt = '<img>../../{}</img>{} Answer:'
 
     query_index = random.randint(0, len(all_data)-1)
     data = json.loads(all_data[query_index].strip())
@@ -57,7 +57,7 @@ def okvqa_icl(all_data, tokenizer, num_shot):
 def format_input(cur_data, cur_dataset):
     
     if cur_dataset == "vizwiz":
-        prompt = '<img>/home/zhaobin/Qwen-VL/{}</img>{} Answer:'
+        prompt = '<img>../../{}</img>{} Answer:'
         return prompt.format(cur_data["image"], cur_data["question"]), cur_data["answer"]
     if cur_dataset == "okvqa":
         prompt = '<img>{}</img>{} Answer:'

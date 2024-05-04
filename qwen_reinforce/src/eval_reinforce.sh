@@ -9,7 +9,7 @@ python3 -m task_vector_reinforce_eval \
     --num_example 100 \
     --num_shot 4 \
     --num_reinforce 100 \
-    --bernoullis_path /home/zhaobin/Qwen-VL/qwen_task_vector/dataset/vizwiz/Bernoullis/theta3.pt \
+    --bernoullis_path /home/zhaobin/Qwen-VL/qwen_reinforce/dataset/vizwiz/Bernoullis/theta3.pt \
     --is_eval True \
-    --result_folder /home/zhaobin/Qwen-VL/qwen_task_vector/dataset/vizwiz/results/ \
+    --result_folder /home/zhaobin/Qwen-VL/qwen_reinforce/dataset/vizwiz/results/ \
     --cur_mode interv 

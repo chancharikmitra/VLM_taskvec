@@ -347,18 +347,18 @@ def add_function_vector(edit_layer, fv_vector, idx=-1):
 def eval_vqa(cur_dataset, results_path, answers):
     ds_collections = {
         'vizwiz_val': {
-        'train': '../data/vizwiz/vizwiz_train.jsonl',
-        'test': '../data/vizwiz/vizwiz_val.jsonl',
-        'question': '../data/vizwiz/vizwiz_val_questions.json',
-        'annotation': '../data/vizwiz/vizwiz_val_annotations.json',
+        'train': '../../data/vizwiz/vizwiz_train.jsonl',
+        'test': '../../data/vizwiz/vizwiz_val.jsonl',
+        'question': '../../data/vizwiz/vizwiz_val_questions.json',
+        'annotation': '../../data/vizwiz/vizwiz_val_annotations.json',
         'metric': 'vqa_score',
         'max_new_tokens': 10,
     },
         'okvqa_val': {
-            'train': '../data/okvqa/okvqa_train.jsonl',
-            'test': '../data/okvqa/okvqa_val.jsonl',
-            'question': '../data/okvqa/OpenEnded_mscoco_val2014_questions.json',
-            'annotation': '../data/okvqa/mscoco_val2014_annotations.json',
+            'train': '../../data/okvqa/okvqa_train.jsonl',
+            'test': '../../data/okvqa/okvqa_val.jsonl',
+            'question': '../../data/okvqa/OpenEnded_mscoco_val2014_questions.json',
+            'annotation': '../../data/okvqa/mscoco_val2014_annotations.json',
             'metric': 'vqa_score',
             'max_new_tokens': 10,
         },
