@@ -44,8 +44,6 @@ def qwen_construct_example(all_data, tokenizer, num_shot=0, cur_dataset="vizwiz"
     if cur_dataset == "cub":
         item = random.sample(all_data, 1)[0]
         return tokenizer(format_cub(item)[0],  return_tensors='pt', padding='longest')
-    if cur_dataset == "matching":
-        return tokenizer(format_matching(all_data, num_shot)[0], return_tensors='pt', padding='longest')
 
 
 def gather_last_attn_activations(inputs, layers, model):
