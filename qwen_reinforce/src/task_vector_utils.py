@@ -15,7 +15,7 @@ from vqa_eval import VQAEval
 
 
 def load_pretrained_model(model_path):
-    model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True, bf16=True).eval()
+    model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True, fp16=True).eval()
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
     tokenizer.padding_side = 'left'
     tokenizer.pad_token_id = tokenizer.eod_id
@@ -29,10 +29,10 @@ def load_pretrained_model(model_path):
     return model, tokenizer, model_config
 
 
-def qwen_construct_example(all_data, tokenizer, num_shot=0, cur_dataset="vizwiz"):
+def qwen_construct_example(all_data, tokenizer, num_shot=0, cur_dataset="vizwiz", idx=0):
 
     if cur_dataset == "nuscenes":
-        return nuscenes_icl(all_data, tokenizer, num_shot)
+        return nuscenes_icl(all_data, tokenizer, num_shot, idx)
     if cur_dataset == "vizwiz":
         return vizwiz_icl(all_data, tokenizer, num_shot)
     if cur_dataset == "okvqa":
@@ -40,7 +40,12 @@ def qwen_construct_example(all_data, tokenizer, num_shot=0, cur_dataset="vizwiz"
     if cur_dataset == "flower":
         ##Flower doesn't need any ICL
         item = random.sample(all_data, 1)[0]
-        return tokenizer(format_input(item, cur_dataset),  return_tensors='pt', padding='longest')
+        return tokenizer(format_flower(item)[0],  return_tensors='pt', padding='longest')
+    if cur_dataset == "cub":
+        item = random.sample(all_data, 1)[0]
+        return tokenizer(format_cub(item)[0],  return_tensors='pt', padding='longest')
+    if cur_dataset == "matching":
+        return tokenizer(format_matching(all_data, num_shot)[0], return_tensors='pt', padding='longest')
 
 
 def gather_last_attn_activations(inputs, layers, model):
@@ -63,9 +68,8 @@ def get_last_mean_head_activations(dataset, model, model_config, tokenizer, N_TR
 
     for n in tqdm(range(N_TRIALS)):
 
-        # with torch.cuda.amp.autocast(dtype=torch.bfloat16):
-            
-        inputs = qwen_construct_example(dataset, tokenizer, num_shot=shot, cur_dataset=cur_dataset)
+        # with torch.cuda.amp.autocast(dtype=torch.bfloat16):   
+        inputs = qwen_construct_example(dataset, tokenizer, num_shot=shot, cur_dataset=cur_dataset, idx=n)
         activations_td, result= gather_last_attn_activations(inputs, model_config['attn_hook_names'], model)
         stack_initial = torch.vstack([split_activations_by_head(activations_td[layer].input, model_config) for layer in model_config['attn_hook_names']]).permute(0,2,1,3)
         cur_activation = stack_initial[:, :, -1, :].unsqueeze(dim=2).unsqueeze(dim=0)
@@ -73,7 +77,7 @@ def get_last_mean_head_activations(dataset, model, model_config, tokenizer, N_TR
             activation_storage = cur_activation
         else:
             activation_storage = torch.vstack((activation_storage, cur_activation))
-
+        # torch.cuda.empty_cache()
     mean_activations = activation_storage.mean(dim=0)
     return mean_activations
 
@@ -88,6 +92,11 @@ def reinforce(mean_activations, model, tokenizer, model_config, test_data, eval_
     optim = torch.optim.Adam(bernoullis, lr=lr)
     with torch.set_grad_enabled(True):
 
+
+        format_func = format_input(cur_dataset=dataset)
+
+
+
         for epoch in tqdm(range(600)):
 
             loss_list = []
@@ -95,11 +104,9 @@ def reinforce(mean_activations, model, tokenizer, model_config, test_data, eval_
             ##Shuffle the batch before each epoch
             cur_data = random.sample(test_data, 1)[0]
 
-            if dataset == "vizwiz" or dataset == "okvqa":
-                cur_data = json.loads(cur_data)
 
-
-            cur_prompt, target_out = format_input(cur_data, cur_dataset=dataset)
+            cur_prompt, target_out, _ = format_func(cur_data)
+            #Adding a space in front to have a proper match with the output
             target_first_token = tokenizer(" " + target_out, return_tensors='pt')["input_ids"][0][0].unsqueeze(dim=0).to("cuda")
             encoded_prompt = tokenizer(cur_prompt, return_tensors='pt', padding='longest')
             ## sample 32 times.
@@ -128,12 +135,13 @@ def reinforce(mean_activations, model, tokenizer, model_config, test_data, eval_
             policy_loss = torch.cat(policy_loss).sum()
             policy_loss.backward()
             optim.step()
+            torch.cuda.empty_cache()
             if epoch % 50 == 0:
-                validate_reinforce(bernoullis, eps, model_config, mean_activations,model, tokenizer, eval_data, dataset, epoch)
+                validate_reinforce(bernoullis, eps, model_config, mean_activations,model, tokenizer, eval_data, epoch, dataset)
     return bernoullis
 
 
-def validate_reinforce(bernoullis, eps, model_config, mean_activations,model, tokenizer, eval_data, dataset, epoch):
+def validate_reinforce(bernoullis, eps, model_config, mean_activations,model, tokenizer, eval_data, epoch, dataset_name):
 
     with torch.no_grad():
         sigmoid_tensor = torch.stack([torch.sigmoid(bernoulli).clamp(min=eps, max=1-eps) for bernoulli in bernoullis])
@@ -141,10 +149,10 @@ def validate_reinforce(bernoullis, eps, model_config, mean_activations,model, to
         sampled = prob_dist.sample()
 
         loss_list = []
+        format_func = format_input(cur_dataset=dataset_name, is_eval=True)
         for item in eval_data:
-            if dataset == "vizwiz" or dataset == "okvqa":
-                cur_data = json.loads(item)
-            cur_prompt, target_out = format_input(cur_data, cur_dataset=dataset)
+
+            cur_prompt, target_out, _ = format_func(item)
             encoded_prompt = tokenizer(cur_prompt, return_tensors='pt', padding='longest')
 
 
@@ -198,30 +206,19 @@ def last_replace_activation_w_avg(layer_head_token_pairs, avg_activations, model
             new_shape = inputs.size()[:-1] + (model_config['n_heads'], model_config['resid_dim']//model_config['n_heads']) # split by head: + (n_attn_heads, hidden_size/n_attn_heads)
             inputs = inputs.view(*new_shape) # inputs shape: (batch_size , tokens (n), heads, hidden_dim)
 
-            # Perform Intervention:
-            if batched_input:
-            # Patch activations from avg activations into baseline sentences (i.e. n_head baseline sentences being modified in this case)
-                for i in range(model_config['n_heads']):
-                    layer, head_n, token_n = layer_head_token_pairs[i]
-                    inputs[i, token_n, head_n] = avg_activations[layer, head_n, token_n]
-            elif last_token_only:
+
+
             # Patch activations only at the last token for interventions like
-                for (layer,head_n,token_n) in layer_head_token_pairs:
-                    if layer == current_layer:
-                        inputs[-1,-1,head_n] = avg_activations[layer,head_n,0]
+            for (layer,head_n,token_n) in layer_head_token_pairs:
+                if layer == current_layer:
+                    inputs[-1,-1,head_n] = avg_activations[layer,head_n,0]
+            # else:
+            # # Patch activations into baseline sentence found at index, -1 of the batch (targeted & multi-token patching)
+            #     for (layer, head_n, token_n) in layer_head_token_pairs:
+            #         if layer == current_layer:
 
-            ##Completely replace a activation in a layer.
-            elif patching:
-                for head in range(model_config['n_heads']):
-                    inputs[-1, -1, head] = avg_activations[current_layer,head,0]
-
-            else:
-            # Patch activations into baseline sentence found at index, -1 of the batch (targeted & multi-token patching)
-                for (layer, head_n, token_n) in layer_head_token_pairs:
-                    if layer == current_layer:
-
-                        ##Brandon. This line decides which position to intervene. avg_activation has a 0 because it only has one token.
-                        inputs[-1, token_n, head_n] = avg_activations[layer,head_n,0]
+            #             ##Brandon. This line decides which position to intervene. avg_activation has a 0 because it only has one token.
+            #             inputs[-1, token_n, head_n] = avg_activations[layer,head_n,0]
             
             inputs = inputs.view(*original_shape)
 
@@ -243,8 +240,8 @@ def last_replace_activation_w_avg(layer_head_token_pairs, avg_activations, model
 def fv_intervention_natural_text(inputs, edit_layer, function_vector, model, model_config, tokenizer, max_new_tokens=10, 
                                  num_interv_tokens=None, return_item="both", interv_method="add", intervention_locations=None, avg_activations=None):
 
-
-    clean_output, intervention_output = None, None
+    #Text form to avoid for-loop inside eval loop
+    clean_output, intervention_output = "None", "None"
 
     if return_item == "clean" or return_item == "both":
     
@@ -265,47 +262,18 @@ def fv_intervention_natural_text(inputs, edit_layer, function_vector, model, mod
         clean_output = tokenizer.batch_decode(clean_output[:, inputs["input_ids"].size(1):],
                             skip_special_tokens=True)[0].strip()
 
+
     if return_item == "interv" or return_item == "both":
         
-        if interv_method == "add":
-            intervention_fn = add_function_vector(edit_layer, function_vector, model.device)
+        # if interv_method == "add":
+        #     intervention_fn = add_function_vector(edit_layer, function_vector, model.device)
 
-        elif interv_method == "replace":
-            intervention_fn = last_replace_activation_w_avg(layer_head_token_pairs=intervention_locations, avg_activations=avg_activations, 
+
+        intervention_fn = last_replace_activation_w_avg(layer_head_token_pairs=intervention_locations, avg_activations=avg_activations, 
                                                 model=model, model_config=model_config,
                                                 batched_input=False, last_token_only=True)
         
-        if num_interv_tokens is not None and num_interv_tokens < max_new_tokens: # Intervene only for a certain number of tokens
-            num_extra_tokens = max_new_tokens - num_interv_tokens
-            with TraceDict(model, layers=model_config['layer_hook_names'], edit_output=intervention_fn):     
-                intervention_output = model.generate(
-                        input_ids=inputs["input_ids"].to("cuda"),
-                        attention_mask=inputs["attention_mask"].to("cuda"),
-                        max_new_tokens=num_interv_tokens,
-                        do_sample=False,
-                        num_beams=1,
-                        min_new_tokens=1,
-                        length_penalty=1,
-                        num_return_sequences=1,
-                        output_hidden_states=True,
-                        use_cache=True,
-                        pad_token_id=tokenizer.eod_id,
-                        eos_token_id=tokenizer.eod_id,)
-            intervention_output = model.generate(
-                        intervention_output,
-                        max_new_tokens=num_extra_tokens,
-                        do_sample=False,
-                        num_beams=1,
-                        min_new_tokens=1,
-                        length_penalty=1,
-                        num_return_sequences=1,
-                        output_hidden_states=True,
-                        use_cache=True,
-                        pad_token_id=tokenizer.eod_id,
-                        eos_token_id=tokenizer.eod_id,)
-
-        else:
-            with TraceDict(model, layers=model_config['layer_hook_names'], edit_output=intervention_fn):     
+        with TraceDict(model, layers=model_config['layer_hook_names'], edit_output=intervention_fn):     
                 intervention_output = model.generate(
                         input_ids=inputs["input_ids"].to("cuda"),
                         attention_mask=inputs["attention_mask"].to("cuda"),
