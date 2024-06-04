@@ -11,13 +11,14 @@ from sklearn.cluster import KMeans
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import sys
 import matplotlib.pyplot as plt
+
 sys.path.append('../eval_mm')
 from vqa import VQA
 from vqa_eval import VQAEval
 
 
 
-def load_pretrained_model(model_name, cur_dataset):
+def load_model(model_name, cur_dataset):
 
     if model_name == "Qwen":
         model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-VL", device_map="auto", trust_remote_code=True, fp16=True).eval()
@@ -26,6 +27,18 @@ def load_pretrained_model(model_name, cur_dataset):
         tokenizer.pad_token_id = tokenizer.eod_id
 
         model_helper = QwenHelper(model, tokenizer, cur_dataset)
+        return model_helper
+    if model_name == "ViLA":
+        sys.path.append('/home/zhaobin/VILA')
+
+        from llava.mm_utils import get_model_name_from_path
+        from llava.model.builder import load_pretrained_model
+        from llava.utils import disable_torch_init
+
+        disable_torch_init()
+        model_name = get_model_name_from_path("Efficient-Large-Model/Llama-3-VILA1.5-8b")
+        tokenizer, model, image_processor, context_len = load_pretrained_model("Efficient-Large-Model/Llama-3-VILA1.5-8b", model_name, None)
+        model_helper = ViLAHelper(model, tokenizer, image_processor, cur_dataset)
         return model_helper
     
 
@@ -83,7 +96,7 @@ def reinforce(mean_activations, model_helper, reinforce_data, eval_data):
 
             text, image_list, target_out, _ = model_helper.format_func(reinforce_data, None, num_shot=0)
             new_input = model_helper.insert_image(text, image_list)
-            target_token = model_helper.tokenizer(" " + target_out, return_tensors='pt')["input_ids"][0][0].unsqueeze(dim=0).to("cuda")
+            target_token = model_helper.tokenizer(target_out, return_tensors='pt')["input_ids"][0][0].unsqueeze(dim=0).to("cuda")
 
             ## sample 32 times.
             sigmoid_tensor = torch.stack([torch.sigmoid(bernoulli).clamp(min=eps, max=1-eps) for bernoulli in bernoullis])
@@ -101,7 +114,7 @@ def reinforce(mean_activations, model_helper, reinforce_data, eval_data):
 
                     loss_list.append(task_loss)
 
-            # print(tokenizer.decode(target_token[0]), tokenizer.decode(out_logit[0].argmax(dim=-1)))
+            print(model_helper.tokenizer.decode(target_token[0]), model_helper.tokenizer.decode(out_logit[0].argmax(dim=-1)))
 
             policy_loss = []
             loss_list = -1*torch.tensor(loss_list)
@@ -137,7 +150,7 @@ def validate_reinforce(model_helper, bernoullis, eps, mean_activations, eval_dat
             text, image_list, target_out, _ = model_helper.format_func(None, item, num_shot=0)
             new_input = model_helper.insert_image(text, image_list)
 
-            target_token = model_helper.tokenizer(" " + target_out, return_tensors='pt')["input_ids"][0][0].unsqueeze(dim=0).to("cuda")
+            target_token = model_helper.tokenizer(target_out, return_tensors='pt')["input_ids"][0][0].unsqueeze(dim=0).to("cuda")
 
 
             out_logit = reinforce_activation_replacement(new_input, mean_activations, model_helper, sampled, last_token_only=True)

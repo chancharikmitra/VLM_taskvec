@@ -20,7 +20,7 @@ def eval_reinforce(args):
 
 
     ##Load the model
-    model_helper = load_pretrained_model(args.model_name, args.data_name)
+    model_helper = load_model(args.model_name, args.data_name)
 
 
     ##Mean activation of some in-context input
