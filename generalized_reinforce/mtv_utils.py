@@ -8,7 +8,7 @@ import json
 import random
 from tqdm import tqdm
 from sklearn.cluster import KMeans
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoProcessor, AutoModelForVision2Seq
 import sys
 import matplotlib.pyplot as plt
 
@@ -40,7 +40,21 @@ def load_model(model_name, cur_dataset):
         tokenizer, model, image_processor, context_len = load_pretrained_model("Efficient-Large-Model/Llama-3-VILA1.5-8b", model_name, None)
         model_helper = ViLAHelper(model, tokenizer, image_processor, cur_dataset)
         return model_helper
-    
+    if model_name == "idefics2":
+        
+        processor = AutoProcessor.from_pretrained("HuggingFaceM4/idefics2-8b")
+        processor.image_processor.do_image_splitting = False
+        model = AutoModelForVision2Seq.from_pretrained(
+            "HuggingFaceM4/idefics2-8b",
+            torch_dtype=torch.float16,
+            _attn_implementation="flash_attention_2",
+            device_map="auto"
+        )
+
+        model_helper = Idefics2Helper(model, processor, cur_dataset)
+        return model_helper
+
+
 
 def gather_last_attn_activations(inputs, model_helper):
     with TraceDict(model_helper.model, layers=model_helper.model_config['attn_hook_names'], retain_input=True, retain_output=False) as td:                
@@ -229,7 +243,7 @@ def fv_intervention_natural_text(model_input, model_helper, max_new_tokens=10, r
 
     if return_item == "clean" or return_item == "both":
     
-        clean_output = model_helper.generata(model_input, max_new_tokens)
+        clean_output = model_helper.generate(model_input, max_new_tokens)
 
 
     if return_item == "interv" or return_item == "both":
@@ -239,7 +253,7 @@ def fv_intervention_natural_text(model_input, model_helper, max_new_tokens=10, r
                                                     batched_input=False, last_token_only=True, split_idx=model_helper.split_idx)
             
         with TraceDict(model_helper.model, layers=model_helper.model_config['attn_hook_names'], edit_output=intervention_fn):     
-                intervention_output = model_helper.generata(model_input, max_new_tokens)
+                intervention_output = model_helper.generate(model_input, max_new_tokens)
 
     return clean_output, intervention_output
 
@@ -247,18 +261,18 @@ def fv_intervention_natural_text(model_input, model_helper, max_new_tokens=10, r
 def eval_vqa(cur_dataset, results_path, answers):
     ds_collections = {
         'vizwiz_val': {
-        'train': '../../data/vizwiz/vizwiz_train.jsonl',
-        'test': '../../data/vizwiz/vizwiz_val.jsonl',
-        'question': '../../data/vizwiz/vizwiz_val_questions.json',
-        'annotation': '../../data/vizwiz/vizwiz_val_annotations.json',
+        'train': '../data/vizwiz/vizwiz_train.jsonl',
+        'test': '../data/vizwiz/vizwiz_val.jsonl',
+        'question': '../data/vizwiz/vizwiz_val_questions.json',
+        'annotation': '../data/vizwiz/vizwiz_val_annotations.json',
         'metric': 'vqa_score',
         'max_new_tokens': 10,
     },
         'okvqa_val': {
-            'train': '../../data/okvqa/okvqa_train.jsonl',
-            'test': '../../data/okvqa/okvqa_val.jsonl',
-            'question': '../../data/okvqa/OpenEnded_mscoco_val2014_questions.json',
-            'annotation': '../../data/okvqa/mscoco_val2014_annotations.json',
+            'train': '../data/okvqa/okvqa_train.jsonl',
+            'test': '../data/okvqa/okvqa_val.jsonl',
+            'question': '../data/okvqa/OpenEnded_mscoco_val2014_questions.json',
+            'annotation': '../data/okvqa/mscoco_val2014_annotations.json',
             'metric': 'vqa_score',
             'max_new_tokens': 10,
         },

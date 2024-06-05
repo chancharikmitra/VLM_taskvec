@@ -3,6 +3,7 @@ from preprocess import *
 from PIL import Image
 import sys
 import torch
+
 sys.path.append('/home/zhaobin/VILA')
 from llava.constants import IMAGE_TOKEN_INDEX
 from llava.conversation import SeparatorStyle, conv_templates
@@ -104,7 +105,7 @@ class ViLAHelper(ModelHelper):
                         "resid_dim":model.llm.model.config.hidden_size,
                         "name_or_path":model.llm.model.config._name_or_path,
                         "attn_hook_names":[f'llm.model.layers.{layer}.self_attn.o_proj' for layer in range(model.llm.model.config.num_hidden_layers)],
-                        "layer_hook_names":[f'llm.model.layers.{layer}.self_attn.o_proj' for layer in range(model.llm.model.config.num_hidden_layers)]}
+                        "layer_hook_names":[f'llm.model.layers.{layer}' for layer in range(model.llm.model.config.num_hidden_layers)]}
     
         self.format_func = get_format_func(cur_dataset)
         self.cur_dataset = cur_dataset
@@ -157,3 +158,59 @@ class ViLAHelper(ModelHelper):
             output = output[: -len(model_input[3])]
         output = output.strip()
         return output 
+
+
+class Idefics2Helper(ModelHelper):
+
+    def __init__(self, model, processor, cur_dataset):
+        self.model = model
+        self.processor = processor
+        self.model_config = {"n_heads":model.model.text_model.config.num_attention_heads,
+                        "n_layers":model.model.text_model.config.num_hidden_layers,
+                        "resid_dim":model.model.text_model.config.hidden_size,
+                        
+                        "name_or_path":model.model.text_model.config._name_or_path,
+                        "attn_hook_names":[f'model.text_model.layers.{layer}.self_attn.o_proj' for layer in range(model.model.text_model.config.num_hidden_layers)],
+                        "layer_hook_names":[f'model.text_model.layers.{layer}' for layer in range(model.model.text_model.config.num_hidden_layers)]}
+    
+        self.format_func = get_format_func(cur_dataset)
+        self.cur_dataset = cur_dataset
+        self.split_idx = 3
+
+    
+    def insert_image(self, text, image_list):
+
+        opened_images = []
+
+        for item in image_list:
+            opened_images.append(load_image(item))
+
+        inputs = self.processor(text=[text], images=[opened_images], padding=True, return_tensors="pt")
+        inputs = {k: v.to("cuda") for k, v in inputs.items()}
+
+        return inputs
+
+
+    def forward(self, model_input):
+        result = self.model(**model_input)
+        return result
+    
+
+    def generate(self, model_input, max_new_tokens):
+
+        output = self.model.generate(
+                **model_input,
+                max_new_tokens=max_new_tokens,
+                do_sample=False,
+                num_beams=1,
+                min_new_tokens=1,
+                length_penalty=1,
+                num_return_sequences=1,
+                output_hidden_states=True,
+                use_cache=True,)
+        
+        output = self.processor.batch_decode(output[:, model_input["input_ids"].size(1):],
+                            skip_special_tokens=True)[0].strip()
+        return output
+
+

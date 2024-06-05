@@ -24,24 +24,28 @@ def eval_reinforce(args):
 
 
     ##Mean activation of some in-context input
-    mean_activations = get_last_mean_head_activations(activation_data, model_helper, N_TRIALS = args.num_example, shot=args.num_shot)
-    torch.save(mean_activations, args.activation_path)
-    mean_activations = torch.load(args.activation_path)
 
-    # # ##Examples from the test set is used to visualize the validation loss
-    bernoullis = reinforce(mean_activations, model_helper, reinforce_data, eval_data)
-    torch.save(bernoullis, args.bernoullis_path)
-    bernoullis = torch.load(args.bernoullis_path)
+    if args.cur_mode != "clean":
+        mean_activations = get_last_mean_head_activations(activation_data, model_helper, N_TRIALS = args.num_example, shot=args.num_shot)
+        torch.save(mean_activations, args.activation_path)
+        mean_activations = torch.load(args.activation_path)
 
-    ###Sample from the trained distribution and identify the intervention locations
-    sigmoid_tensor = torch.stack([torch.sigmoid(bernoulli).clamp(min=0, max=1) for bernoulli in bernoullis])
-    ###Thresholding heads with low probability from being sampled
-    sigmoid_tensor = torch.nn.functional.threshold(sigmoid_tensor, 0.8, 0)
-    prob_dist = torch.distributions.Bernoulli(sigmoid_tensor)
-    sampled = prob_dist.sample()
-    intervention_locations = reinforce_intervention_location(sampled)
-    print(len(intervention_locations))
+        # # ##Examples from the test set is used to visualize the validation loss
+        bernoullis = reinforce(mean_activations, model_helper, reinforce_data, eval_data)
+        torch.save(bernoullis, args.bernoullis_path)
+        bernoullis = torch.load(args.bernoullis_path)
 
+        ###Sample from the trained distribution and identify the intervention locations
+        sigmoid_tensor = torch.stack([torch.sigmoid(bernoulli).clamp(min=0, max=1) for bernoulli in bernoullis])
+        ###Thresholding heads with low probability from being sampled
+        sigmoid_tensor = torch.nn.functional.threshold(sigmoid_tensor, 0.8, 0)
+        prob_dist = torch.distributions.Bernoulli(sigmoid_tensor)
+        sampled = prob_dist.sample()
+        intervention_locations = reinforce_intervention_location(sampled)
+        print(len(intervention_locations))
+    else:
+        mean_activations = None
+        intervention_locations = None
 
     clean_answers = []
     interv_answers = []
@@ -57,12 +61,11 @@ def eval_reinforce(args):
 
         clean_out, interv_out = fv_intervention_natural_text(new_input, model_helper, max_new_tokens=args.max_token, return_item=args.cur_mode, intervention_locations=intervention_locations, avg_activations=mean_activations)
 
+        interv_answers.append({"answer":interv_out.split(".")[0], "question_id":question_id})
+        clean_answers.append({"answer":clean_out.split(".")[0], "question_id":question_id})
 
-        interv_answers.append({"answer":interv_out, "question_id":question_id})
-        clean_answers.append({"answer":clean_out, "question_id":question_id})
-
-        clean_count += int(clean_out[0].strip().lower() == target_out[0].lower())
-        interv_count += int(interv_out[0].strip().lower() == target_out[0].lower())
+        clean_count += int(clean_out.split(".")[0].strip().lower() == target_out.lower())
+        interv_count += int(interv_out.split(".")[0].strip().lower() == target_out.lower())
 
     if args.is_eval:
 
