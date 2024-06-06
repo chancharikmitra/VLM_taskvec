@@ -38,7 +38,7 @@ def eval_reinforce(args):
         ###Sample from the trained distribution and identify the intervention locations
         sigmoid_tensor = torch.stack([torch.sigmoid(bernoulli).clamp(min=0, max=1) for bernoulli in bernoullis])
         ###Thresholding heads with low probability from being sampled
-        sigmoid_tensor = torch.nn.functional.threshold(sigmoid_tensor, 0.8, 0)
+        sigmoid_tensor = torch.nn.functional.threshold(sigmoid_tensor, 0.9, 0)
         prob_dist = torch.distributions.Bernoulli(sigmoid_tensor)
         sampled = prob_dist.sample()
         intervention_locations = reinforce_intervention_location(sampled)
@@ -55,7 +55,7 @@ def eval_reinforce(args):
     for item in tqdm(val_dataset):
 
 
-        text, image_list, target_out, question_id = model_helper.format_func(None, item, num_shot=0)
+        text, image_list, target_out, question_id = model_helper.format_func(train_dataset, item, num_shot=0)
         new_input = model_helper.insert_image(text, image_list)
 
 
@@ -104,3 +104,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     eval_reinforce(args)
+

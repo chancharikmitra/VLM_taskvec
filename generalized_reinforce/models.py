@@ -54,8 +54,10 @@ class QwenHelper(ModelHelper):
                     "attn_hook_names":[f'transformer.h.{layer}.attn.c_proj' for layer in range(model.transformer.config.num_hidden_layers)],
                     "layer_hook_names":[f'transformer.h.{layer}' for layer in range(model.transformer.config.num_hidden_layers)]}
         self.format_func = get_format_func(cur_dataset)
+        self.space = True
         self.cur_dataset = cur_dataset
         self.split_idx = 2
+        self.nonspecial_idx = 0
 
     def insert_image(self, text, image_list):
 
@@ -65,7 +67,7 @@ class QwenHelper(ModelHelper):
         new_text = ""
         for text_split, image in zip(text[:-1], image_list):
             new_text += f"{text_split}{image}</img>"
-        return self.tokenizer(new_text, return_tensors='pt', padding='longest')
+        return self.tokenizer(new_text + text[-1], return_tensors='pt', padding='longest')
     
     def forward(self, model_input):
 
@@ -93,6 +95,7 @@ class QwenHelper(ModelHelper):
         return self.tokenizer.batch_decode(generated_output[:, model_input["input_ids"].size(1):],
                             skip_special_tokens=True)[0].strip()
     
+    
 
 class ViLAHelper(ModelHelper):
 
@@ -108,8 +111,10 @@ class ViLAHelper(ModelHelper):
                         "layer_hook_names":[f'llm.model.layers.{layer}' for layer in range(model.llm.model.config.num_hidden_layers)]}
     
         self.format_func = get_format_func(cur_dataset)
+        self.space = False
         self.cur_dataset = cur_dataset
         self.split_idx = 3
+        self.nonspecial_idx = 0
 
     
     ##No need to change the image token since it's the same as default
@@ -165,6 +170,7 @@ class Idefics2Helper(ModelHelper):
     def __init__(self, model, processor, cur_dataset):
         self.model = model
         self.processor = processor
+        self.tokenizer = processor.tokenizer
         self.model_config = {"n_heads":model.model.text_model.config.num_attention_heads,
                         "n_layers":model.model.text_model.config.num_hidden_layers,
                         "resid_dim":model.model.text_model.config.hidden_size,
@@ -174,8 +180,10 @@ class Idefics2Helper(ModelHelper):
                         "layer_hook_names":[f'model.text_model.layers.{layer}' for layer in range(model.model.text_model.config.num_hidden_layers)]}
     
         self.format_func = get_format_func(cur_dataset)
+        self.space = False
         self.cur_dataset = cur_dataset
         self.split_idx = 3
+        self.nonspecial_idx = 1
 
     
     def insert_image(self, text, image_list):

@@ -80,10 +80,12 @@ def format_okvqa(all_data, cur_item=None, num_shot=0):
             sample = json.loads(sample.strip())
             few_shot_prompt += prompt.format(sample['question']) + f" {sample['answer']}"
             image_list.append(sample["image"])
-    full_text = vizwiz_prompt + few_shot_prompt + prompt.format(question)
+    full_text = few_shot_prompt + prompt.format(question)
     image_list.append(image)
 
     return full_text, image_list, answer, question_id
+
+
 
 
 def format_flower(all_data, cur_item=None, num_shot=0):
