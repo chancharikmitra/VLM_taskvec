@@ -26,8 +26,8 @@ def load_images(image_files):
 
 
 class ModelHelper:
-    def __init__():
-        pass
+    def __init__(self):
+        self.meta_mtv = False
 
     #Always return a single variable. If both text and image is returned, return in tuple
     def insert_image(self, text, image_list):
@@ -58,6 +58,7 @@ class QwenHelper(ModelHelper):
         self.cur_dataset = cur_dataset
         self.split_idx = 2
         self.nonspecial_idx = 0
+        self.question_lookup = None
 
     def insert_image(self, text, image_list):
 
@@ -76,7 +77,6 @@ class QwenHelper(ModelHelper):
         return result
     
     def generate(self, model_input, max_new_tokens):
-        model_input = self.tokenizer(model_input,  return_tensors='pt', padding='longest')
 
         generated_output = self.model.generate(
                 input_ids=model_input["input_ids"].to("cuda"),
@@ -115,7 +115,7 @@ class ViLAHelper(ModelHelper):
         self.cur_dataset = cur_dataset
         self.split_idx = 3
         self.nonspecial_idx = 0
-
+        self.question_lookup = None
     
     ##No need to change the image token since it's the same as default
     def insert_image(self, text, image_list):
@@ -184,14 +184,17 @@ class Idefics2Helper(ModelHelper):
         self.cur_dataset = cur_dataset
         self.split_idx = 3
         self.nonspecial_idx = 1
-
+        self.question_lookup = None
     
-    def insert_image(self, text, image_list):
+    def insert_image(self, text, image_list, skip_open=False):
 
         opened_images = []
 
-        for item in image_list:
-            opened_images.append(load_image(item))
+        if not skip_open:
+            for item in image_list:
+                opened_images.append(load_image(item))
+        else:
+            opened_images = image_list
 
         inputs = self.processor(text=[text], images=[opened_images], padding=True, return_tensors="pt")
         inputs = {k: v.to("cuda") for k, v in inputs.items()}
@@ -222,3 +225,171 @@ class Idefics2Helper(ModelHelper):
         return output
 
 
+
+class IdeficsHelper(ModelHelper):
+
+    def __init__(self, model, processor, cur_dataset):
+        self.model = model
+        self.processor = processor
+        self.tokenizer = processor.tokenizer
+        self.model_config = None
+        self.format_func = get_format_func(cur_dataset)
+        self.space = False
+        self.cur_dataset = cur_dataset
+        self.split_idx = 3
+        self.nonspecial_idx = 1
+        self.question_lookup = None
+    
+    def insert_image(self, text, image_list, skip_open=False):
+
+        splitted_text = text.split("<image>")[1:]
+
+        prompt_list = [[]]
+        for idx in range(len(splitted_text)):
+            prompt_list[0].append(image_list[idx])
+            prompt_list[0].append(splitted_text[idx])
+
+
+        # --batched mode
+        inputs = self.processor(prompt_list, return_tensors="pt").to("cuda")
+        return inputs
+
+
+    def forward(self, model_input):
+        return None
+    
+
+    def generate(self, model_input, max_new_tokens):
+
+        bad_words_ids = self.tokenizer(["<image>", "<fake_token_around_image>"], add_special_tokens=False).input_ids
+
+
+        output = self.model.generate(
+                **model_input,
+                max_new_tokens=max_new_tokens,
+                do_sample=False,
+                num_beams=1,
+                min_new_tokens=1,
+                length_penalty=1,
+                num_return_sequences=1,
+                use_cache=True,
+                bad_words_ids=bad_words_ids)
+        
+        output = self.processor.batch_decode(output[:, model_input["input_ids"].size(1):],
+                            skip_special_tokens=True)[0].strip()
+        return output
+
+
+class Emu2Helper(ModelHelper):
+
+    def __init__(self, model, tokenizer, cur_dataset):
+        self.model = model
+        self.tokenizer = tokenizer
+        self.model_config = None
+        self.format_func = get_format_func(cur_dataset)
+        self.space = False
+        self.cur_dataset = cur_dataset
+        self.split_idx = 2
+        self.nonspecial_idx = 0
+        self.question_lookup = None
+
+    def insert_image(self, text, image_list):
+
+        query = '[<IMG_PLH>]Describe the image in details:' 
+        query = text.replace("<image>", "[<IMG_PLH>]")
+        
+        opened_list = []
+        for item in image_list:
+            opened_list.append(Image.open(item).convert('RGB'))
+
+
+        inputs = self.model.build_input_ids(
+            text=[query],
+            tokenizer=self.tokenizer,
+            image=opened_list
+        )
+        return inputs
+    
+    def forward(self, model_input):
+
+        pass
+    
+    def generate(self, model_input, max_new_tokens):
+
+        with torch.no_grad():
+            outputs = self.model.generate(
+                input_ids=model_input["input_ids"],
+                attention_mask=model_input["attention_mask"],
+                image=model_input["image"].to(torch.bfloat16),
+                max_new_tokens=max_new_tokens,
+                length_penalty=-1,
+                do_sample=False,
+                num_beams=1,)
+
+        output_text = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
+        return output_text
+
+
+class FlamingoHelper(ModelHelper):
+
+    def __init__(self, model, processor, tokenizer, cur_dataset):
+        self.model = model
+        self.processor = processor
+        self.tokenizer = tokenizer
+
+        self.format_func = get_format_func(cur_dataset)
+        self.space = False
+        self.cur_dataset = cur_dataset
+        self.split_idx = 3
+        self.nonspecial_idx = 1
+        self.question_lookup = None
+    
+    def insert_image(self, text, image_list, skip_open=False):
+
+        vision_x = [self.processor(Image.open(item).convert("RGB")).unsqueeze(0) for item in image_list]
+        vision_x = torch.cat(vision_x, dim=0)
+        vision_x = vision_x.unsqueeze(1).unsqueeze(0).to("cuda")
+
+        """
+        Step 3: Preprocessing text
+        Details: In the text we expect an <image> special token to indicate where an image is.
+        We also expect an <|endofchunk|> special token to indicate the end of the text 
+        portion associated with an image.
+        """
+        self.tokenizer.padding_side = "left" # For generation padding tokens should be on the left
+
+        splitted_text = text.split("<image>")[1:]
+        new_text = ''
+        for item in splitted_text:
+            new_text += f"<image>{item}<|endofchunk|>"
+
+
+
+
+        lang_x = self.tokenizer(
+            [new_text],
+            return_tensors="pt",
+        ).to("cuda")
+
+        return (vision_x, lang_x)
+
+
+    def forward(self, model_input):
+        pass
+    
+
+    def generate(self, model_input, max_new_tokens):
+
+        vision_x, lang_x = model_input
+
+        generated_text = self.model.generate(
+            vision_x=vision_x,
+            lang_x=lang_x["input_ids"],
+            attention_mask=lang_x["attention_mask"],
+            max_new_tokens=max_new_tokens,
+            num_beams=1,
+            do_sample=False
+        )
+
+
+        return self.tokenizer.decode(generated_text[0])
