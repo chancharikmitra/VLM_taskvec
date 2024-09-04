@@ -127,7 +127,8 @@ def load_model(model_name, cur_dataset, meta_mtv):
 
 def gather_last_attn_activations(inputs, model_helper):
     with TraceDict(model_helper.model, layers=model_helper.model_config['attn_hook_names'], retain_input=True) as td:                
-        result = model_helper.generate(inputs, max_new_tokens=128)
+        #result = model_helper.generate(inputs, max_new_tokens=128)
+        result = model_helper.forward(inputs)
     return td, result
 
 
