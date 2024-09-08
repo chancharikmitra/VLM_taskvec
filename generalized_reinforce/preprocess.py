@@ -8,6 +8,101 @@ import random
 vizwiz_prompt = """First carefully understand the given examples. 
 Then use the given image and answer the question in the same way as the examples. 
 If the question can not be answered, respond unanswerable. """
+
+okvqa_prompt = """First carefully understand the given examples. 
+Then use the given image and answer the question in the same way as the examples. """
+
+kvp_prompt = """
+Given the image as well as the text and location of a certain key, extract the corresponding value.
+"""
+
+# Copied from wildreceipts/class_list.txt
+wildreceipt_options_string = """
+Ignore
+Store_name_value
+Store_name_key
+Store_addr_value
+Store_addr_key
+Tel_value
+Tel_key
+Date_value
+Date_key
+Time_value
+Time_key
+Prod_item_value
+Prod_item_key
+Prod_quantity_value
+Prod_quantity_key
+Prod_price_value
+Prod_price_key
+Subtotal_value
+Subtotal_key
+Tax_value
+Tax_key
+Tips_value
+Tips_key
+Total_value
+Total_key
+Others"""
+# wildreceipt_options_string = """
+# 0 Ignore
+# 1 Store_name_value
+# 2 Store_name_key
+# 3 Store_addr_value
+# 4 Store_addr_key
+# 5 Tel_value
+# 6 Tel_key
+# 7 Date_value
+# 8 Date_key
+# 9 Time_value
+# 10 Time_key
+# 11 Prod_item_value
+# 12 Prod_item_key
+# 13 Prod_quantity_value
+# 14 Prod_quantity_key
+# 15 Prod_price_value
+# 16 Prod_price_key
+# 17 Subtotal_value
+# 18 Subtotal_key
+# 19 Tax_value
+# 20 Tax_key
+# 21 Tips_value
+# 22 Tips_key
+# 23 Total_value
+# 24 Total_key
+# 25 Others"""
+
+wildreceipt_prompt = """
+Given the image, its dimensions, some text, and its precise bounding box location, classify the text as one of the 25 categories provided.
+"""
+
+wildreceipt_options = ['Ignore', 
+'Store_name_value',
+'Store_name_key',
+'Store_addr_value',
+'Store_addr_key',
+'Tel_value',
+'Tel_key',
+'Date_value',
+'Date_key',
+'Time_value',
+'Time_key',
+'Prod_item_value',
+'Prod_item_key',
+'Prod_quantity_value',
+'Prod_quantity_key',
+'Prod_price_value',
+'Prod_price_key',
+'Subtotal_value',
+'Subtotal_key',
+'Tax_value',
+'Tax_key',
+'Tips_value',
+'Tips_key',
+'Total_value',
+'Total_key',
+'Others']
+
 ####
 
 def open_data(dataset_name, path):
@@ -16,8 +111,8 @@ def open_data(dataset_name, path):
         if dataset_name == "vizwiz" or dataset_name == "okvqa" or dataset_name == "ai2d":
             dataset = list(json_file)
 
-        elif dataset_name == "flower" or dataset_name == "cub":
-            dataset = json.load(json_file)   
+        elif dataset_name == "flower" or dataset_name == "cub" or dataset_name == "wildreceipt" or dataset_name == "kvp":
+            dataset = json.load(json_file) 
     return dataset
 
 
@@ -33,6 +128,10 @@ def get_format_func(cur_dataset):
         return format_cub
     if cur_dataset == "ai2d":
         return format_ai2d
+    if cur_dataset == "kvp":
+        return format_kvp
+    if cur_dataset == "wildreceipt":
+        return format_wildreceipt
 
 
 ####All return format will be in the form (Text, list of images, Answer, Question_id)
@@ -60,6 +159,61 @@ def format_vizwiz(all_data, cur_item=None, num_shot=0):
 
     return full_text, image_list, answer, question_id
 
+def format_kvp(all_data, cur_item=None, num_shot=0):
+    # Should this be different for Qwen or should all models use the bounding box ref format.
+    prompt = '{}<image> Key Text: {} Key Bounding Box: {} \n\nValue: '
+    image_list = []
+
+    if cur_item is None:
+        cur_item = random.sample(all_data, 1)[0]
+    image, key_text, key_loc, value_text = cur_item['image'], cur_item['key']['text'], cur_item['key']['bbox'], cur_item['value']['text']
+
+    few_shot_prompt = ''
+    if num_shot > 0:
+        sampled_data = random.sample(all_data, num_shot)
+        for sample in sampled_data:
+            few_shot_prompt += prompt.format(kvp_prompt, sample['key']['text'], sample['key']['bbox']) + sample['value']['text'] #f" {str(sample['answer']) + ' ' + wildreceipt_options[sample['answer']]}  
+            image_list.append("../" + sample["image"])
+    # In the case of wildreceipts, the prompt should always be added to each one as above. Reevaluate later if needed.
+    full_text = few_shot_prompt + prompt.format(kvp_prompt, key_text, key_loc)
+    # if num_shot != 0:
+    #     full_text = wildreceipt_prompt + few_shot_prompt + prompt.format(question)
+    # else:
+    #     full_text = few_shot_prompt + prompt.format(question)
+    image_list.append("../" + image)
+
+    # Question ID not needed for Wildreceipt
+    question_id = 0
+    target = f'{value_text}'
+    return full_text, image_list, target, question_id
+    
+def format_wildreceipt(all_data, cur_item=None, num_shot=0):
+    # Should this be different for Qwen or should all models use the bounding box ref format.
+    prompt = '{}<image> Image Width: {} Image Height: {} Annotation: {} Categories: {} \n\nAnswer: '
+    image_list = []
+
+    if cur_item is None:
+        cur_item = random.sample(all_data, 1)[0]
+    image, width, height, annotation, answer = cur_item['file_name'], cur_item['width'], cur_item['height'], cur_item['annotation'], cur_item['answer']
+
+    few_shot_prompt = ''
+    if num_shot > 0:
+        sampled_data = random.sample(all_data, num_shot)
+        for sample in sampled_data:
+            few_shot_prompt += prompt.format(wildreceipt_prompt, sample['width'], sample['height'], sample['annotation'], wildreceipt_options_string) + wildreceipt_options[sample['answer']] #f" {str(sample['answer']) + ' ' + wildreceipt_options[sample['answer']]}  
+            image_list.append("../" + sample["file_name"])
+    # In the case of wildreceipts, the prompt should always be added to each one as above. Reevaluate later if needed.
+    full_text = few_shot_prompt + prompt.format(wildreceipt_prompt, width, height, annotation, wildreceipt_options_string)
+    # if num_shot != 0:
+    #     full_text = wildreceipt_prompt + few_shot_prompt + prompt.format(question)
+    # else:
+    #     full_text = few_shot_prompt + prompt.format(question)
+    image_list.append("../" + image)
+
+    # Question ID not needed for Wildreceipt
+    question_id = 0
+    target = f'{wildreceipt_options[answer]}'
+    return full_text, image_list, target, question_id
 
 def format_okvqa(all_data, cur_item=None, num_shot=0):
     prompt = '<image>{} Answer:'
