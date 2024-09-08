@@ -11,6 +11,51 @@ from transformers.utils import logging
 import sys
 logging.set_verbosity_error() 
 
+from apricot import FacilityLocationSelection
+
+def get_representative_samples_text(dataset, num_samples=400):
+
+    n = len(dataset)
+    print(f'Dataset Len {n}')
+    combined_features = []
+    model = SentenceTransformer("Alibaba-NLP/gte-Qwen2-7B-instruct", trust_remote_code=True)
+
+    count = 0
+    for item in dataset:
+        if count % 1000 == 0:
+            print(f'Iteration {count}')
+        item = json.loads(item)
+        question_id = item['question_id']
+        qa = item["question"] + " " + item["answer"]
+        # image_features = torch.load(f'../data/vizwiz/clip_features/{question_id}_image.pt')
+        text_features = model.encode(qa)#, prompt_name="query")
+        # print(f'Text Feature Shape {text_features.shape}')
+        
+        # Concatenate tensors and convert to numpy
+        # combined = torch.squeeze(torch.cat(text_features, dim=-1))
+        combined_features.append(text_features)
+        count += 1
+    
+    print("Finished with Loop")
+    combined_features = np.array(combined_features)
+    print(f'Combined Features Shape {combined_features.shape}')
+    
+    # Create FacilityLocationFunction object
+    # objFL = FacilityLocationFunction(n=n, data=combined_features, mode="dense", metric="cosine")
+
+    subset = FacilityLocationSelection(num_samples, metric='euclidean', optimizer='lazy').fit_transform(combined_features, np.array(range(n)))
+    # print(f'X_subset {subset}')
+    # exit()
+    # Maximize the function to get the most representative samples
+    # greedyList = objFL.maximize(budget=num_samples, optidmizer='NaiveGreedy', verbose=False)
+    # print(greedyList)
+    # Get the selected samples
+    # print(subset[1])
+    selected_samples = [dataset[i] for i in list(subset[1])]
+    print(len(selected_samples))
+    
+    return selected_samples
+
 def eval_reinforce(args):
 
     train_dataset = open_data(args.data_name, args.train_path)
@@ -18,6 +63,8 @@ def eval_reinforce(args):
 
 
     activation_data = train_dataset
+    # If you want to use Facility Location Code
+    # activation_data = get_representative_samples_text(activation_data, num_samples=100)
     reinforce_data = random.sample(train_dataset, 100)
     eval_data = val_dataset[:50]
 
@@ -83,12 +130,18 @@ def eval_reinforce(args):
         clean_count += int(clean_out.split(".")[0].split("\n")[0].strip().lower() == target_out.lower())
         interv_count += int(interv_out.split(".")[0].split("\n")[0].strip().lower() == target_out.lower())
 
+        # Scoring for KVP and WildReceipts:
+        clean_exact += int(clean_out == target_out)
+        interv_exact += int(interv_out == target_out)
+
     if args.is_eval:
 
         if args.cur_mode == "interv" or args.cur_mode == "both":
 
             if args.data_name == "flower" or args.data_name =="cub" or args.data_name == "ai2d" or args.data_name == "info" or args.data_name == "food" or args.data_name == "dtd":
                 print(f"Intervention Score:{interv_count/len(val_dataset)}")
+            elif args.data_name == "wildreceipt"  or args.data_name == "kvp":
+                print(f"Intervention Score:{interv_exact}")
             else:
                 print(f"{args.data_name}_{args.experiment_name} Intervention Score:")
                 eval_vqa(f"{args.data_name}_val", args.result_folder + f"{args.experiment_name}_interv.json", interv_answers)
@@ -96,6 +149,8 @@ def eval_reinforce(args):
         if args.cur_mode == "clean" or args.cur_mode == "both":
             if args.data_name == "flower" or args.data_name =="cub" or args.data_name == "ai2d" or args.data_name == "info" or args.data_name == "food" or args.data_name == "dtd":
                 print(f"Clean Score:{clean_count/len(val_dataset)}")
+            elif args.data_name == "wildreceipt" or args.data_name == "kvp":
+                print(f"Clean Score:{clean_exact}")
             else:
                 print(f"{args.data_name}_{args.experiment_name} Clean Score:")
                 eval_vqa(f"{args.data_name}_val", args.result_folder + f"{args.experiment_name}_clean.json", clean_answers)
