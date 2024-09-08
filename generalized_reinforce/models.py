@@ -5,11 +5,15 @@ import sys
 import torch
 
 sys.path.append('/home/zhaobin/VILA')
-from llava.constants import IMAGE_TOKEN_INDEX
-from llava.conversation import SeparatorStyle, conv_templates
-from llava.mm_utils import (KeywordsStoppingCriteria,
-                            process_images, tokenizer_image_token)
+# from llava.constants import IMAGE_TOKEN_INDEX
+# from llava.conversation import SeparatorStyle, conv_templates
+# from llava.mm_utils import (KeywordsStoppingCriteria,
+#                             process_images, tokenizer_image_token)
 
+# These imports are specifically for LLaVA-OneVision: deactivate your VILA specific environment because it will likely cause conflicts
+from llava.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IGNORE_INDEX
+from llava.conversation import conv_templates, SeparatorStyle
+from llava.mm_utils import process_images, tokenizer_image_token
 
 def load_image(image_file):
     image = Image.open(image_file).convert("RGB")
