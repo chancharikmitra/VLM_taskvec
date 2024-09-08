@@ -40,6 +40,69 @@ class ModelHelper:
         pass
 
 
+class LLaVAOVHelper(ModelHelper):
+
+    def __init__(self, model, tokenizer, image_processor, cur_dataset, device):
+        self.model = model
+        self.tokenizer = tokenizer
+        self.image_processor = image_processor
+        self.model_config = {"n_heads":model.config.num_attention_heads,
+                        "n_layers":model.config.num_hidden_layers,
+                        "resid_dim":model.config.hidden_size,
+                        "name_or_path":model.config._name_or_path,
+                        "attn_hook_names":[f'model.layers.{layer}.self_attn.o_proj' for layer in range(model.config.num_hidden_layers)],
+                        "layer_hook_names":[f'model.layers.{layer}' for layer in range(model.config.num_hidden_layers)]}
+    
+        self.format_func = get_format_func(cur_dataset)
+        self.space = False
+        self.cur_dataset = cur_dataset
+        self.split_idx = 2
+        self.nonspecial_idx = 0 #Check output to see if special tokens are outputted
+        self.device = device
+
+    
+    ##No need to change the image token since it's the same as default
+    def insert_image(self, text, image_list):
+
+        images = load_images(image_list)
+        image_tensors = process_images(images, self.image_processor, self.model.config) 
+        image_tensors = [_image.to(dtype=torch.float16, device=self.device) for _image in image_tensors]
+
+
+        conv_template = "qwen_1_5"  # Make sure you use correct chat template for different models
+        question = text.replace("<image>", DEFAULT_IMAGE_TOKEN)
+        conv = copy.deepcopy(conv_templates[conv_template])
+        conv.append_message(conv.roles[0], question)
+        conv.append_message(conv.roles[1], None)
+        prompt_question = conv.get_prompt()
+
+        input_ids = tokenizer_image_token(prompt_question, self.tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt").unsqueeze(0).to(self.device) #Try just importing the functions from utils. That way you don't have to use the import statement.
+        image_sizes = [image.size for image in images]
+
+        return {'input_ids': input_ids, 'image_tensors': image_tensors, 'image_sizes': image_sizes}
+    
+
+    def forward(self, model_input):
+
+        result = self.model(model_input['input_ids'], images=model_input['image_tensors'], image_sizes=model_input['image_sizes']) # batch_size x n_tokens x vocab_size, only want last token prediction
+        # print(f'Model Forward Output {result.keys()}')
+        return result
+    
+
+    def generate(self, model_input, max_new_tokens):
+
+        output = self.model.generate(
+            model_input['input_ids'],
+            images=model_input['image_tensors'],
+            image_sizes=model_input['image_sizes'],
+            do_sample=False,
+            temperature=0,
+            max_new_tokens=max_new_tokens,
+        )
+    
+        output = self.tokenizer.batch_decode(output, skip_special_tokens=True)[0]
+        output = output.strip()
+        return output 
 
 
 class QwenHelper(ModelHelper):
