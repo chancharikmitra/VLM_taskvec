@@ -18,7 +18,6 @@ import sys
 logging.set_verbosity_error() 
 
 
-
 def eval_reinforce(args):
 
     train_dataset = open_data(args.data_name, args.train_path)
@@ -36,18 +35,18 @@ def eval_reinforce(args):
 
     ##Mean activation of some in-context input
     if args.cur_mode != "clean":
-        # if model_helper.meta_mtv:
-        #     mean_activations = meta_last_mean_head_activations(activation_data, model_helper, N_TRIALS = args.num_example, shot=args.num_shot)
-        # else:
-        #     mean_activations = get_last_mean_head_activations(activation_data, model_helper, N_TRIALS = args.num_example, shot=args.num_shot)
+        if model_helper.meta_mtv:
+            mean_activations = meta_last_mean_head_activations(activation_data, model_helper, N_TRIALS = args.num_example, shot=args.num_shot)
+        else:
+            mean_activations = get_last_mean_head_activations(activation_data, model_helper, N_TRIALS = args.num_example, shot=args.num_shot)
 
-        #torch.save(mean_activations, args.activation_path)
-        mean_activations = torch.load(args.activation_path)
+        torch.save(mean_activations, args.activation_path)
+        #mean_activations = torch.load(args.activation_path)
 
         # # ##Examples from the test set is used to visualize the validation loss
-        # bernoullis = reinforce(mean_activations, model_helper, reinforce_data, eval_data)
-        # torch.save(bernoullis, args.bernoullis_path)
-        bernoullis = torch.load(args.bernoullis_path)
+        bernoullis = reinforce(mean_activations, model_helper, reinforce_data, eval_data)
+        torch.save(bernoullis, args.bernoullis_path)
+        #bernoullis = torch.load(args.bernoullis_path)
 
         
 

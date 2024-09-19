@@ -16,6 +16,9 @@ from torchvision.ops.boxes import box_area
 # from pycocotools.coco import COCO
 
 logging.set_verbosity_warning()
+import warnings
+import requests
+
 torch.autograd.set_detect_anomaly(True)
 sys.path.append('../eval_mm')
 from vqa import VQA
@@ -78,6 +81,28 @@ def load_model(model_name, cur_dataset, meta_mtv):
         )
 
         model_helper = Idefics2Helper(model, processor, cur_dataset)
+    if model_name == "llava-onevision":
+        #OneVision Imports:
+        from llava.model.builder import load_pretrained_model
+        from llava.mm_utils import get_model_name_from_path
+        warnings.filterwarnings("ignore")
+        pretrained = "lmms-lab/llava-onevision-qwen2-7b-ov"
+        model_name = "llava_qwen"
+        device = "cuda"
+        device_map = "auto"
+        llava_model_args = {
+                "multimodal": True,
+            }
+        overwrite_config = {}
+        overwrite_config["image_aspect_ratio"] = "pad"
+        llava_model_args["overwrite_config"] = overwrite_config
+
+        tokenizer, model, image_processor, max_length = load_pretrained_model(pretrained, None, model_name, device_map=device_map, **llava_model_args)
+
+        model.eval()
+
+        model_helper = LLaVAOVHelper(model, tokenizer, image_processor, cur_dataset, device)
+        return model_helper
 
 
     if model_name == "mantis":
