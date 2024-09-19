@@ -115,8 +115,8 @@ def load_model(model_name, cur_dataset, meta_mtv):
 
     if model_name == "llama3":
 
-        model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3.1-8B", device_map="cuda", token="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").eval()
-        tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B", token="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")
+        model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3.1-8B", device_map="cuda", token="").eval()
+        tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B", token="")
         model_helper = llama3Helper(model, tokenizer, cur_dataset)
 
     if model_name == "llava":
