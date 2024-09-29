@@ -1,0 +1,5411 @@
+[
+    {
+        "image": "/home/raychai/geometry/2738/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\tan L as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2635/img_diagram.png",
+        "key": {
+            "text": "Find T X if E X = 24 and D E = 7. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2642/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth if necessary. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2745/img_diagram.png",
+        "key": {
+            "text": "A B C D is a parallelogram with side lengths as indicated in the figure at the right. The perimeter of A B C D is 22. Find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2732/img_diagram.png",
+        "key": {
+            "text": "A square is inscribed in a circle having a radius of 6 inches. Find the length of the side of the square. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2648/img_diagram.png",
+        "key": {
+            "text": "Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2431/img_diagram.png",
+        "key": {
+            "text": "In regular hexagon U V W X Y Z, the side is 12 centimeters long. Find W Y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2446/img_diagram.png",
+        "key": {
+            "text": "M C = 7, R M = 4, and A T = 16. Find M B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2988/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2966/img_diagram.png",
+        "key": {
+            "text": "Find z in the given parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2885/img_diagram.png",
+        "key": {
+            "text": "If pentagons A B C D E and P Q R S T are similar, find S R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2911/img_diagram.png",
+        "key": {
+            "text": "If c = 5, find b. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2816/img_diagram.png",
+        "key": {
+            "text": "In R S T V, R S = 6, V T = 3 and R X is twice the length of X V. Find X Y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2982/img_diagram.png",
+        "key": {
+            "text": "m \\angle 4 = 42. Find m \\angle 7. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2861/img_diagram.png",
+        "key": {
+            "text": "In the figure, line l is parallel to line m. Line n intersects both l and m. Which of the following lists includes all of the angles that are supplementary to \\angle 1? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2541/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle A of quadrilateral A B C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2536/img_diagram.png",
+        "key": {
+            "text": "The diameters of \\odot A, \\odot B, and \\odot C are 10, 30 and 10 units, respectively. Find Z X if A Z \\cong C W and C W = 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2670/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral A B C D is a rectangle. m \\angle 2 = 40. Find m \\angle 3. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2793/img_diagram.png",
+        "key": {
+            "text": "Find y so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2607/img_diagram.png",
+        "key": {
+            "text": "Find B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2700/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2694/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram M N P R to find m \\angle M N P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2777/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2799/img_diagram.png",
+        "key": {
+            "text": "Chords A C and D F are equidistant from the center. If the radius of \\odot G is 26, find A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2474/img_diagram.png",
+        "key": {
+            "text": "parallelogram M N P Q with m \\angle M = 10 x and m \\angle N = 20 x, find \\angle M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2597/img_diagram.png",
+        "key": {
+            "text": "Equilateral pentagon P Q R S T is inscribed in \\odot U. Find m \\widehat Q R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2859/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2403/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2923/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2579/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2954/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2853/img_diagram.png",
+        "key": {
+            "text": "a = 14, b = 48, and c = 50, find \\cos A. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2409/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2824/img_diagram.png",
+        "key": {
+            "text": "M C = 7, R M = 4, and A T = 16. Find M S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2504/img_diagram.png",
+        "key": {
+            "text": "Find x to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2490/img_diagram.png",
+        "key": {
+            "text": "Find x so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2929/img_diagram.png",
+        "key": {
+            "text": "If \\frac { I J } { X J } = \\frac { H J } { Y J }, m \\angle W X J = 130 and m \\angle W Z G = 20, find m \\angle J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2573/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 1 in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2756/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of \\triangle W Z X, if \\triangle W Z X \\sim \\triangle S R T, S T = 6, W X = 5, and the perimeter of \\triangle S R T = 15. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2721/img_diagram.png",
+        "key": {
+            "text": "If P R \\parallel K L, K N = 9, L N = 16, and P M = 2K P, find K M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2626/img_diagram.png",
+        "key": {
+            "text": "What is the area of \\parallelogram A B C D? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2651/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral A B C D is inscribed in \\odot Z such that m \\angle B Z A = 104, m \\widehat C B = 94, and A B \\parallel D C. Find m \\angle Z A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2552/img_diagram.png",
+        "key": {
+            "text": "Which segments are parallel? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2908/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2525/img_diagram.png",
+        "key": {
+            "text": "Given that the perimeter of \\triangle A B C = 25, find x. Assume that segments that appear tangent to circles are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2805/img_diagram.png",
+        "key": {
+            "text": "In \\odot O, E C and A B are diameters, and \\angle B O D \\cong \\angle D O E \\cong \\angle E O F \\cong \\angle F O A. Find m \\widehat A E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2991/img_diagram.png",
+        "key": {
+            "text": "m \\angle B A C = 38, B C = 5, and D C = 5, find m \\angle D A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2428/img_diagram.png",
+        "key": {
+            "text": "In the figure, a regular polygon is inscribed in a circle. Find the measure of a central angle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2872/img_diagram.png",
+        "key": {
+            "text": "Find the measure of m \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2975/img_diagram.png",
+        "key": {
+            "text": "Tangent M P is drawn to \\odot O. Find x if M O = 20. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2558/img_diagram.png",
+        "key": {
+            "text": "Find R S if \\triangle Q R S is an equilateral triangle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2896/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram J K L M to find m \\angle J M L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2902/img_diagram.png",
+        "key": {
+            "text": "Find the measure of J K. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2422/img_diagram.png",
+        "key": {
+            "text": "Find the length of \\widehat A B. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2878/img_diagram.png",
+        "key": {
+            "text": "\\angle 1 and \\angle 2 form a linear pair and m \\angle 2 = 67. Find the measure of \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2455/img_diagram.png",
+        "key": {
+            "text": "Find the circumference of the figure. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/3001/img_diagram.png",
+        "key": {
+            "text": "Find the length of \\widehat J K. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2669/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2713/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find m \\angle C D F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2687/img_diagram.png",
+        "key": {
+            "text": "The diameters of \\odot A, \\odot B, and \\odot C are 10, 30 and 10 units, respectively. Find A C if A Z \\cong C W and C W = 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2764/img_diagram.png",
+        "key": {
+            "text": "Find the value of the variable y in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2663/img_diagram.png",
+        "key": {
+            "text": "Trapezoid G H J K has an area of 188.35 square feet. If H J is 16.5 feet, find G K. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2780/img_diagram.png",
+        "key": {
+            "text": "Find \\angle 9. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2614/img_diagram.png",
+        "key": {
+            "text": "\\triangle E F G is equilateral, and E H bisects \\angle E. Find m \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2719/img_diagram.png",
+        "key": {
+            "text": "Refer to the figure at the right. Find the value of m \\angle F C E if p \\parallel q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2517/img_diagram.png",
+        "key": {
+            "text": "\\overrightarrow B A and \\overrightarrow B C are opposite rays and \\overrightarrow B D bisects \\angle A B F. If m \\angle F B C = 2 x + 25 and m \\angle A B F = 10 x - 1, find m \\angle D B F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2483/img_diagram.png",
+        "key": {
+            "text": "Find Q P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2560/img_diagram.png",
+        "key": {
+            "text": "Find x.  Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2840/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2837/img_diagram.png",
+        "key": {
+            "text": "Find a in the given parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2930/img_diagram.png",
+        "key": {
+            "text": "Use a calculator to find the measure of \\angle J to the nearest degree. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2489/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2947/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2467/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle N C L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2584/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 4 = 101. Find the measure of \\angle 6. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2410/img_diagram.png",
+        "key": {
+            "text": "Find C D if A C = x - 3, B E = 20, A B = 16, and C D = x + 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2830/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2847/img_diagram.png",
+        "key": {
+            "text": "Find m \\widehat J K L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2589/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2567/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral E F G H is a rectangle. If m \\angle H G E = 13, find m \\angle F G E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2484/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2510/img_diagram.png",
+        "key": {
+            "text": "Circle J has a radius of 10 units, \\odot K has a radius of 8 units, and B C = 5.4 units. Find J K. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2417/img_diagram.png",
+        "key": {
+            "text": "In \\odot P, the radius is 2 inches, find the length of \\widehat R S. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2583/img_diagram.png",
+        "key": {
+            "text": "If L K = 4, M P = 3, P Q = 6, K J = 2, R S = 6, and L P = 2, find M L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2460/img_diagram.png",
+        "key": {
+            "text": "Find x. Round the angle measure to the nearest degree. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2940/img_diagram.png",
+        "key": {
+            "text": "In \\odot X, A B = 30, C D = 30, and m \\widehat C Z = 40. Find m \\widehat C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2937/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2763/img_diagram.png",
+        "key": {
+            "text": "A C is a diagonal of rhombus A B C D. If m \\angle C D E is 116, what is m \\angle A C D? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2680/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 4. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2714/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2619/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral E F G H is a rectangle. If F K = 32 feet, find E G. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2769/img_diagram.png",
+        "key": {
+            "text": "Find x so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2613/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that any segment that appears to be tangent is tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2787/img_diagram.png",
+        "key": {
+            "text": "Find m \\widehat Q T S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2664/img_diagram.png",
+        "key": {
+            "text": "What is the measure of \\angle B if m \\angle A = 10? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2875/img_diagram.png",
+        "key": {
+            "text": "Find P S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2996/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram P Q R S to find Q P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2458/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle C F D on \\odot F with diameter A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2802/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle C A D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2522/img_diagram.png",
+        "key": {
+            "text": "Find x if A E = 3, A B = 2, B C = 6, and E D = 2 x - 3. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2978/img_diagram.png",
+        "key": {
+            "text": "In \\odot P, m \\angle M P L = 65 and N P \\perp P L. Find m \\widehat N M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2555/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram J K L M to find m \\angle J K L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2452/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 58, m \\angle 2 = 47, and m \\angle 3 = 26. Find the measure of \\angle 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2808/img_diagram.png",
+        "key": {
+            "text": "Find x so that B E and A D are perpendicular. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2425/img_diagram.png",
+        "key": {
+            "text": "Find x. Round the side measure to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2905/img_diagram.png",
+        "key": {
+            "text": "Find y. Round to the nearest tenth, if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2891/img_diagram.png",
+        "key": {
+            "text": "In \\odot B, C E = 13.5. Find B D. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2528/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2972/img_diagram.png",
+        "key": {
+            "text": "U J = 9, V J = 3, and Z T = 18. Find S J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2726/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2751/img_diagram.png",
+        "key": {
+            "text": "If \\frac { I J } { X J } = \\frac { H J } { Y J }, m \\angle W X J = 130 and m \\angle W Z G = 20, find m \\angle Y I Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2656/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2621/img_diagram.png",
+        "key": {
+            "text": "Find S T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2953/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 3. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2509/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 123. Find the measure of \\angle 14. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2924/img_diagram.png",
+        "key": {
+            "text": "Find \\cos C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2404/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle C A M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2590/img_diagram.png",
+        "key": {
+            "text": "Find G I if G H = 9, G K = 6, and K J = 4. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2829/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region. Assume that the polygon is regular unless otherwise stated. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2473/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2574/img_diagram.png",
+        "key": {
+            "text": "G J is a diameter of \\odot K. Find m \\widehat G L J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2959/img_diagram.png",
+        "key": {
+            "text": "Find the area of the rhombus. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2497/img_diagram.png",
+        "key": {
+            "text": "In H, the diameter is 18, L M = 12, and m \\widehat L M = 84. Find H P. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2503/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region.  Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2823/img_diagram.png",
+        "key": {
+            "text": "The segment is tangent to the circle. Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2479/img_diagram.png",
+        "key": {
+            "text": "The two polygons are similar. Find U T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2854/img_diagram.png",
+        "key": {
+            "text": "Find h in the triangle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2600/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2794/img_diagram.png",
+        "key": {
+            "text": "For the pair of similar figures, use the given areas to find the scale factor from the blue to the green figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2677/img_diagram.png",
+        "key": {
+            "text": "The perimeter of this polygon is 60 centimeters. Find the length of the side of the polygon. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2699/img_diagram.png",
+        "key": {
+            "text": "In \\odot X, A B = 30, C D = 30, and m \\widehat C Z = 40. Find N D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2770/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle A. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2693/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2707/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2916/img_diagram.png",
+        "key": {
+            "text": "Find K L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2882/img_diagram.png",
+        "key": {
+            "text": "G H \\cong K J. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2961/img_diagram.png",
+        "key": {
+            "text": "Find J L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2441/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 3 = 110 and m \\angle 12 = 55. Find the measure of \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2436/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 2 if m \\widehat B C = 30 and m \\widehat A D = 20. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2531/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the triangle. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2888/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2546/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded sector. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2866/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 3 = 110 and m \\angle 12 = 55. Find the measure of \\angle 13. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2985/img_diagram.png",
+        "key": {
+            "text": "Each pair of polygons is similar. Find A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2811/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2645/img_diagram.png",
+        "key": {
+            "text": "Find h in the triangle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2632/img_diagram.png",
+        "key": {
+            "text": "In the figure, \\triangle A B C \\sim \\triangle D E F. B G is a median of \\triangle A B C, and E H is a median of \\triangle D E F. Find E H if B C = 30, B G = 15, and E F = 15. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2748/img_diagram.png",
+        "key": {
+            "text": "Which of the following facts would be sufficient to prove that line d is parallel to X Z? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2638/img_diagram.png",
+        "key": {
+            "text": "\\triangle K L N and \\triangle L M N are isosceles and m \\angle J K N = 130. Find the measure of \\angle J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2735/img_diagram.png",
+        "key": {
+            "text": "Find the area of the trapezoid. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2742/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2438/img_diagram.png",
+        "key": {
+            "text": "Find W R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2862/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle W. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2815/img_diagram.png",
+        "key": {
+            "text": "If two sides of a triangle measure 12 and 7, which of the following cannot be the perimeter of the triangle? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2981/img_diagram.png",
+        "key": {
+            "text": "Find the area of the rhombus. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2535/img_diagram.png",
+        "key": {
+            "text": "Refer to the triangle shown below. Find y to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2542/img_diagram.png",
+        "key": {
+            "text": "Find the scale factor from Q to Q'. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2918/img_diagram.png",
+        "key": {
+            "text": "Find x so that G J \\parallel F K. G H = x + 3.5, H J = x - 8.5, F H = 21, H K = 7. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2445/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2432/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2868/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2886/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2548/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral D E F G is a rectangle. If m \\angle E D F = 5 x - 3 and m \\angle D F G = 3 x + 7, find m \\angle E D F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2912/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 12 = 64. Find the measure of \\angle 7. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2965/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2731/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2746/img_diagram.png",
+        "key": {
+            "text": "Find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2641/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle A B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2636/img_diagram.png",
+        "key": {
+            "text": "Find the value of the variable x in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2827/img_diagram.png",
+        "key": {
+            "text": "In rhombus A B C D, m \\angle D A B = 2, m \\angle A D C and C B = 6. Find m \\angle A D B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2850/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral E F G H is a rectangle. If E F = 4 x - 6 and H G = x + 3, find E F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2570/img_diagram.png",
+        "key": {
+            "text": "In the figure, K L is tangent to \\odot M at K. Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2507/img_diagram.png",
+        "key": {
+            "text": "Find x if \\triangle J L M \\sim \\triangle Q S T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2493/img_diagram.png",
+        "key": {
+            "text": "In \\odot M, F L = 24, H J = 48, and m \\widehat H P = 65. Find F G. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2594/img_diagram.png",
+        "key": {
+            "text": "Find the area of the triangle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2477/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2957/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2499/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2920/img_diagram.png",
+        "key": {
+            "text": "For trapezoid Q R T U, V and S are midpoints of the legs. If Q R = 4 and U T = 16, find V S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2774/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2703/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2697/img_diagram.png",
+        "key": {
+            "text": "If A B \\parallel D C, find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2679/img_diagram.png",
+        "key": {
+            "text": "The diagram shows the layout of Elm, Plum, and Oak streets. Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2709/img_diagram.png",
+        "key": {
+            "text": "Circle J has a radius of 10 units, \\odot K has a radius of 8 units, and B C = 5.4 units. Find C K. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2790/img_diagram.png",
+        "key": {
+            "text": "U J = 9, V J = 3, and Z T = 18. Find S V. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2604/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2673/img_diagram.png",
+        "key": {
+            "text": "In \\odot R, find T V. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2895/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2901/img_diagram.png",
+        "key": {
+            "text": "\\triangle W X Y \\cong \\triangle W X Z. Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2976/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2998/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2456/img_diagram.png",
+        "key": {
+            "text": "If m \\widehat F E = 118, m \\widehat A B = 108, m \\angle E G B = 52, and m \\angle E F B = 30, find m \\widehat C F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2421/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2526/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 2 if A B \\perp B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2551/img_diagram.png",
+        "key": {
+            "text": "If X M = 4, X N = 6, and N Z = 9, find X Y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2871/img_diagram.png",
+        "key": {
+            "text": "Find the area of the kite. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2806/img_diagram.png",
+        "key": {
+            "text": "Find \\angle C of quadrilateral A B C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2992/img_diagram.png",
+        "key": {
+            "text": "Find the measure of m \\angle 2. Assume that segments that appear tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2652/img_diagram.png",
+        "key": {
+            "text": "a = 14, b = 48, and c = 50, find \\sin A. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2625/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral D E F G is a rectangle. If m \\angle E F D = 2 x - 3 and m \\angle D F G = x + 12, find m \\angle E F D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2728/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region formed by the circle and regular polygon. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2658/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2722/img_diagram.png",
+        "key": {
+            "text": "Each pair of polygons is similar. Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2755/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle H. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2944/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral W X Y Z is a rectangle. Find the measure of \\angle 2 if m \\angle 1 = 30. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2933/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2569/img_diagram.png",
+        "key": {
+            "text": "Find \\angle 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2849/img_diagram.png",
+        "key": {
+            "text": "m \\angle 4 = 2 y + 32 and m \\angle 5 = 3 y - 3. Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2587/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2413/img_diagram.png",
+        "key": {
+            "text": "In rhombus A B C D, m \\angle D A B = 2, m \\angle A D C and C B = 6. Find m \\angle A C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2464/img_diagram.png",
+        "key": {
+            "text": "m is the perpendicular bisector of X Z, W Z = 14.9. Find W X. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2939/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2563/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram J K L M to find m \\angle K J L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2514/img_diagram.png",
+        "key": {
+            "text": "Find K J if G J = 8, G H = 12, and H I = 4. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2480/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 6. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2834/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2843/img_diagram.png",
+        "key": {
+            "text": "\\triangle L M N \\cong \\triangle Q R S. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2419/img_diagram.png",
+        "key": {
+            "text": "The rectangle is inscribed into the circle. Find the exact circumference of the circle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2783/img_diagram.png",
+        "key": {
+            "text": "Find the length of \\widehat J K. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2617/img_diagram.png",
+        "key": {
+            "text": "In \\triangle D E F, m \\angle E = 108, m \\angle F = 26, and f = 20. Find d to the nearest whole number. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2660/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2789/img_diagram.png",
+        "key": {
+            "text": "In \\odot T, Z V = 1, and T W = 13. Find X Y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2767/img_diagram.png",
+        "key": {
+            "text": "Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2710/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral W X Y Z is a rectangle. Find the measure of \\angle 5 if m \\angle 1 = 30. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2684/img_diagram.png",
+        "key": {
+            "text": "Find the variable of x to the nearest tenth. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2689/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2667/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find m \\angle D A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2610/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2784/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2683/img_diagram.png",
+        "key": {
+            "text": "Find P Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2717/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 3 = 43. Find the measure of \\angle 11. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2760/img_diagram.png",
+        "key": {
+            "text": "Circle A has diameters D F and P G. If D F = 10, find D A. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2839/img_diagram.png",
+        "key": {
+            "text": "The area A of the shaded region is given. Find x. A = 66 cm^2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2463/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2414/img_diagram.png",
+        "key": {
+            "text": "Find A E if A B = 12, A C = 16, and E D = 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2580/img_diagram.png",
+        "key": {
+            "text": "A B is a diameter, A C = 8 inches, and B C = 15 inches. Find the circumference of the circle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2934/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2943/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find m \\angle A F D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2519/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle R C M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2844/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2833/img_diagram.png",
+        "key": {
+            "text": "In \\triangle C D F, K is the centroid and D K = 16. Find C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2469/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2487/img_diagram.png",
+        "key": {
+            "text": "Circles G, J, and K all intersect at L. If G H = 10, find F H. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2949/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2513/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2564/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2758/img_diagram.png",
+        "key": {
+            "text": "Trapezoid G H J K has an area of 75 square meters. Find the height. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2622/img_diagram.png",
+        "key": {
+            "text": "For the pair of similar figures, find the area of the green figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2655/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2752/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 50 and m \\angle 3 = 60. Find the measure of \\angle 6. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2725/img_diagram.png",
+        "key": {
+            "text": "The diameters of \\odot A, \\odot B, and \\odot C are 10, 30 and 10 units, respectively. Find Y W if A Z \\cong C W and C W = 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2628/img_diagram.png",
+        "key": {
+            "text": "In \\odot M, F L = 24, H J = 48, and m \\widehat H P = 65. Find N J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2426/img_diagram.png",
+        "key": {
+            "text": "For the pair of similar figures, use the given areas to find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2451/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2971/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram to find b. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2906/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral A B C D is a rectangle. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2892/img_diagram.png",
+        "key": {
+            "text": "in \\triangle X Y Z, P is the centroid, K P = 3, and X J = 8. Find Y J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2995/img_diagram.png",
+        "key": {
+            "text": "\\triangle B C D \\cong \\triangle W X Y. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2801/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find m \\angle A C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2876/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of \\triangle D E F, if \\triangle D E F \\sim \\triangle C B F, perimeter of \\triangle C B F = 27, D F = 6, and F C = 8. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2556/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2898/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2521/img_diagram.png",
+        "key": {
+            "text": "Find x for the equilateral triangle R S T if R S = x + 9, S T = 2 x, and R T = 3 x - 9. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2609/img_diagram.png",
+        "key": {
+            "text": "In \\odot M, F L = 24, H J = 48, and m \\widehat H P = 65. Find m \\widehat H J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2690/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2704/img_diagram.png",
+        "key": {
+            "text": "Find x. A = 357 in^2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2773/img_diagram.png",
+        "key": {
+            "text": "P is the incenter of \\triangle A E C. Find m \\angle D E P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2674/img_diagram.png",
+        "key": {
+            "text": "In \\odot F, m \\angle D F A = 50 and C F \\perp F B. Find m \\widehat A C E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2603/img_diagram.png",
+        "key": {
+            "text": "If L K = 4, M P = 3, P Q = 6, K J = 2, R S = 6, and L P = 2, find J H. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2797/img_diagram.png",
+        "key": {
+            "text": "If R L = 5, R T = 9, and W S = 6, find R W. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2779/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2494/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2500/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2577/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2599/img_diagram.png",
+        "key": {
+            "text": "If S T = 8, T R = 4, and P T = 6, find Q R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2857/img_diagram.png",
+        "key": {
+            "text": "Find G H in the kite. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2820/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2927/img_diagram.png",
+        "key": {
+            "text": "The area of trapezoid J K L M is 138 square feet. The area of trapezoid Q R S T is 5.52 square feet. If trapezoid J K L M \\sim trapezoid Q R S T, find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2950/img_diagram.png",
+        "key": {
+            "text": "Point D is the center of the circle. What is m \\angle A B C? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2470/img_diagram.png",
+        "key": {
+            "text": "In rhombus L M P Q, m \\angle Q L M = 2 x^ { 2 } - 10, m \\angle Q P M = 8 x, and M P = 10. Find the perimeter of L M P Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2407/img_diagram.png",
+        "key": {
+            "text": "Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2593/img_diagram.png",
+        "key": {
+            "text": "Find the side length in isosceles triangle D E F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2741/img_diagram.png",
+        "key": {
+            "text": "Equilateral pentagon P Q R S T is inscribed in \\odot U. Find m \\angle P S R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2736/img_diagram.png",
+        "key": {
+            "text": "The segment is tangent to the circle. Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2631/img_diagram.png",
+        "key": {
+            "text": "Find x so that a \\parallel b. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2646/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle A to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2545/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2532/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2968/img_diagram.png",
+        "key": {
+            "text": "If c = 5, find a. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2448/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2986/img_diagram.png",
+        "key": {
+            "text": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2812/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral W X Y Z is inscribed in \\odot V. Find m \\angle X. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2865/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find A D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2538/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 3 in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2962/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded sector. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2915/img_diagram.png",
+        "key": {
+            "text": "In \\odot O, E C and A B are diameters, and \\angle B O D \\cong \\angle D O E \\cong \\angle E O F \\cong \\angle F O A. Find m \\widehat A D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2881/img_diagram.png",
+        "key": {
+            "text": "Find E G if G is the incenter of \\triangle A B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2435/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2442/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2818/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2496/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2958/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2502/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 4. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2575/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2855/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2822/img_diagram.png",
+        "key": {
+            "text": "For trapezoid T R S V, M and N are midpoints of the legs. If T R = 32 and M N = 25, find V S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2478/img_diagram.png",
+        "key": {
+            "text": "If \\triangle L M N \\sim \\triangle Q R S, Q R = 35, R S = 37, S Q = 12, and N L = 5, find the perimeter of \\triangle L M N. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2925/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2952/img_diagram.png",
+        "key": {
+            "text": "For trapezoid Q R S T, A and B are midpoints of the legs. Find m \\angle S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2508/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2828/img_diagram.png",
+        "key": {
+            "text": "\\triangle J K L \\sim \\triangle W Y Z. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2472/img_diagram.png",
+        "key": {
+            "text": "Triangle L M N is equilateral, and M P bisects L N. Find the measure of the side of \\triangle L M N. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2405/img_diagram.png",
+        "key": {
+            "text": "In the figure below, \\angle A B C is intersected by parallel lines l and m. What is the measure of \\angle A B C? Express your answer in degrees. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2591/img_diagram.png",
+        "key": {
+            "text": "A regular pentagon and a square share a mutual vertex X. The sides X Y and X Z are sides of a third regular polygon with a vertex at X. How many sides does this polygon have? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2692/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2706/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2771/img_diagram.png",
+        "key": {
+            "text": "Solve for x in the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2676/img_diagram.png",
+        "key": {
+            "text": "M N \\parallel B C. Solve for x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2601/img_diagram.png",
+        "key": {
+            "text": "Find A D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2795/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2698/img_diagram.png",
+        "key": {
+            "text": "W T Y \\cong T W Y. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2547/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2889/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2530/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle K. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2984/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle Y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2810/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral A B D C is a rectangle. If m \\angle 1 = 38, find m \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2867/img_diagram.png",
+        "key": {
+            "text": "A D and C G are diameters of \\odot B. Find m \\widehat A G. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2960/img_diagram.png",
+        "key": {
+            "text": "find \\sin S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2917/img_diagram.png",
+        "key": {
+            "text": "Find T Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2883/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 3. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2437/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle V X W. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2440/img_diagram.png",
+        "key": {
+            "text": "Polygon A B C D \\sim polygon A E F G, m \\angle A G F = 108, G F = 14, A D = 12, D G = 4.5, E F = 8, and A B = 26. Find m \\angle A D C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2639/img_diagram.png",
+        "key": {
+            "text": "Find Q M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2743/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2734/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2633/img_diagram.png",
+        "key": {
+            "text": "m \\angle 2 = 2 x, m \\angle 3 = x. Find m \\angle 3. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2644/img_diagram.png",
+        "key": {
+            "text": "Find B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2749/img_diagram.png",
+        "key": {
+            "text": "If Z P = 4 x - 9 and P Y = 2 x + 5, find Z X. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2461/img_diagram.png",
+        "key": {
+            "text": "Q is the centroid and B E = 9. Find B Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2416/img_diagram.png",
+        "key": {
+            "text": "Find y in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2582/img_diagram.png",
+        "key": {
+            "text": "Find P N. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2936/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\tan M as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2941/img_diagram.png",
+        "key": {
+            "text": "In the figure, square A B D C is inscribed in \\odot K. Find the measure of a central angle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2588/img_diagram.png",
+        "key": {
+            "text": "m \\angle 3 = x - 12 and m \\angle 6 = 72. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2846/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2831/img_diagram.png",
+        "key": {
+            "text": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2485/img_diagram.png",
+        "key": {
+            "text": "In rhombus A B C D, A B = 2 x + 3 and B C = 5 x. Find m \\angle A E B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2511/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2566/img_diagram.png",
+        "key": {
+            "text": "Find the height of the parallelogram given its area with 2000 square units. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2768/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 50 and m \\angle 3 = 60. Find the measure of \\angle 4. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2665/img_diagram.png",
+        "key": {
+            "text": "Each pair of polygons is similar. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2612/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2786/img_diagram.png",
+        "key": {
+            "text": "Find X W. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2681/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2715/img_diagram.png",
+        "key": {
+            "text": "Find x so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2762/img_diagram.png",
+        "key": {
+            "text": "\\triangle A B C \\sim \\triangle F D G. Find the value of x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2618/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2424/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle B G E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2453/img_diagram.png",
+        "key": {
+            "text": "The diagonals of rhombus F G H J intersect at K. If G H = x + 9 and J H = 5 x - 2, find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2809/img_diagram.png",
+        "key": {
+            "text": "The ratio of the measure of the angles of the triangle below is 3 : 2 : 1. Which of the following is not an angle measure of the triangle? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2529/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2973/img_diagram.png",
+        "key": {
+            "text": "Find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2904/img_diagram.png",
+        "key": {
+            "text": "Use the Pythagorean Theorem to find the length of the hypotenuse of the right triangle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2890/img_diagram.png",
+        "key": {
+            "text": "Find P T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2459/img_diagram.png",
+        "key": {
+            "text": "J K L M is a rectangle. M L P R is a rhombus. \\angle J M K \\cong \\angle R M P, m \\angle J M K = 55, and m \\angle M R P = 70. Find m \\angle K L P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2997/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2803/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2874/img_diagram.png",
+        "key": {
+            "text": "If P R \\parallel K L, K N = 9, L N = 16, P M = 2 K P, find M N. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2554/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2523/img_diagram.png",
+        "key": {
+            "text": "The pair of polygons is similar. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2979/img_diagram.png",
+        "key": {
+            "text": "Find the area of the regular polygon. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2620/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2657/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2750/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2727/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle Z to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2650/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2627/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2720/img_diagram.png",
+        "key": {
+            "text": "Use rectangle L M N P, parallelogram L K M J to solve the problem. If L N = 10, L J = 2 x + 1, and P J = 3 x - 1, find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2757/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 4 p + 15, m \\angle 3 = 3 p - 10 and m \\angle 4 = 6 r + 5. Find the value of p. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2897/img_diagram.png",
+        "key": {
+            "text": "Find x in the given parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2559/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2903/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\sin N as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2974/img_diagram.png",
+        "key": {
+            "text": "P Q R S is a rhombus inscribed in a circle. Find m \\widehat S P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2454/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2423/img_diagram.png",
+        "key": {
+            "text": "Find A B if \\triangle A B C is an isosceles triangle with A B \\cong B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2879/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2524/img_diagram.png",
+        "key": {
+            "text": "In \\odot Z, \\angle W Z X \\cong \\angle X Z Y, m \\angle V Z U = 4 x, m \\angle U Z Y = 2 x + 24, and V Y and W U are diameters. Find m \\widehat W U X. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2553/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 11 = 62 and m \\angle 14 = 38. Find the measure of \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2909/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2429/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2873/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2804/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2990/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 50 and m \\angle 3 = 60. Find the measure of \\angle 8. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2781/img_diagram.png",
+        "key": {
+            "text": "If A B C D is a rhombus, and m \\angle A B C = 70, what is m \\angle 1? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2615/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2662/img_diagram.png",
+        "key": {
+            "text": "H K and I G are diameters of \\odot L. Find m \\widehat I H J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2718/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/3000/img_diagram.png",
+        "key": {
+            "text": "A B C D is a rhombus. If P B = 12, A B = 15, and m \\angle A B D = 24. Find m \\angle B D A. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2668/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2765/img_diagram.png",
+        "key": {
+            "text": "Find the scale from B to B'. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2712/img_diagram.png",
+        "key": {
+            "text": "If D B = 24, A E = 3, and E C = 18, find A D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2686/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle A B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2946/img_diagram.png",
+        "key": {
+            "text": "If F G H J is a kite, find m \\angle G F J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2488/img_diagram.png",
+        "key": {
+            "text": "Find the scale factor from W to W'. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2931/img_diagram.png",
+        "key": {
+            "text": "Find w in the given parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2585/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\sin P as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2411/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2466/img_diagram.png",
+        "key": {
+            "text": "If A B = 12, A C = 16, and E D = 5, find A E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2561/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2516/img_diagram.png",
+        "key": {
+            "text": "\\triangle R S V \\cong \\triangle T V S. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2482/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2836/img_diagram.png",
+        "key": {
+            "text": "Circles G, J, and K all intersect at L. If G H = 10, find the measure. Find J L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2841/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\cos A as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2733/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2744/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle A B C if m \\angle C D A = 61. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2649/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2739/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2643/img_diagram.png",
+        "key": {
+            "text": "Find x in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2634/img_diagram.png",
+        "key": {
+            "text": "X Y and X Z are midsegments of \\triangle R S T. Find S T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2860/img_diagram.png",
+        "key": {
+            "text": "Find the value of the variable t. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2817/img_diagram.png",
+        "key": {
+            "text": "Find the area of the triangle. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2983/img_diagram.png",
+        "key": {
+            "text": "Cut four congruent triangles off the corners of a rectangle to make an octagon. What is the area of the octagon? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2537/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle A F B on \\odot F with diameter A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2540/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 3 if A B \\perp B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2989/img_diagram.png",
+        "key": {
+            "text": "For the pair of similar figures, use the given areas to find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2447/img_diagram.png",
+        "key": {
+            "text": "Find the value of the variable y in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2430/img_diagram.png",
+        "key": {
+            "text": "Find X Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2884/img_diagram.png",
+        "key": {
+            "text": "Find B C if A B = 6, A F = 8, B C = x, C D = y, D E = 2 y - 3, and F E = x + \\frac { 10 } { 3 }. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2910/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2967/img_diagram.png",
+        "key": {
+            "text": "If C E = t - 2. E B = t + 1, C D = 2, and C A = 10, find C E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2776/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral A B C D is a rectangle. m \\angle 2 = 40. Find m \\angle 8. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2701/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram W X Y Z to find m \\angle X Y Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2695/img_diagram.png",
+        "key": {
+            "text": "Find m \\widehat L P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2798/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region. Assume that the polygon is regular unless otherwise stated. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2792/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 3 if m \\angle 4 = m \\angle 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2606/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2671/img_diagram.png",
+        "key": {
+            "text": "Find K L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2825/img_diagram.png",
+        "key": {
+            "text": "In \\odot P, J K = 10 and \\widehat J K L = 134. Find m \\widehat J L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2852/img_diagram.png",
+        "key": {
+            "text": "Find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2408/img_diagram.png",
+        "key": {
+            "text": "If X N = 6, X M = 2, and X Y = 10, find N Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2928/img_diagram.png",
+        "key": {
+            "text": "Find C F if B F bisects \\angle A B C and A C \\parallel E D, B A = 6, B C = 7.5, A C = 9, and D E = 9. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2572/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle M P Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2505/img_diagram.png",
+        "key": {
+            "text": "Find the area of the rhombus. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2491/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\cos B as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2858/img_diagram.png",
+        "key": {
+            "text": "Find x in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2596/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2402/img_diagram.png",
+        "key": {
+            "text": "Circle O has a radius of 13 inches. Radius O B is perpendicular to chord C D which is 24 inches long. Find O X. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2475/img_diagram.png",
+        "key": {
+            "text": "If m \\angle 5 = 7 x - 5 and m \\angle 4 = 2 x + 23, find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2955/img_diagram.png",
+        "key": {
+            "text": "\\angle 6 and \\angle 8 are complementary, m \\angle 8 = 47. Find the measure of \\angle 7. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2922/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth if necessary. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2578/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth, if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2602/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2796/img_diagram.png",
+        "key": {
+            "text": "Find the measure of m \\widehat Y X Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2675/img_diagram.png",
+        "key": {
+            "text": "Find the measure of m \\angle 1. Assume that segments that appear tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2778/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2608/img_diagram.png",
+        "key": {
+            "text": "Triangle L M N is equilateral, and M P bisects L N. Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2772/img_diagram.png",
+        "key": {
+            "text": "Find m \\widehat X Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2691/img_diagram.png",
+        "key": {
+            "text": "Find Q S. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2705/img_diagram.png",
+        "key": {
+            "text": "Find y so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2951/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2926/img_diagram.png",
+        "key": {
+            "text": "Find the area of the trapezoid. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2406/img_diagram.png",
+        "key": {
+            "text": "Find the value of x in the diagram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2592/img_diagram.png",
+        "key": {
+            "text": "Find the area of the shaded region. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2471/img_diagram.png",
+        "key": {
+            "text": "Find the area of the trapezoid. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2576/img_diagram.png",
+        "key": {
+            "text": "Find X Y of isosceles \\triangle X Y Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2495/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2501/img_diagram.png",
+        "key": {
+            "text": "In \\triangle P Q R, S T \\parallel R Q. If P S = 12.5, S R = 5, and P T = 15, find T Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2821/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral A B C D is a rhombus. If A B = 2 x + 3 and B C = x + 7, find C D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2856/img_diagram.png",
+        "key": {
+            "text": "The segment is tangent to the circle. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2598/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of \\triangle R U W if \\triangle R U W \\sim \\triangle S T V, S T = 24, V S = 12, V T = 18 and U W = 21. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2647/img_diagram.png",
+        "key": {
+            "text": "Find x so that m \\parallel n. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2630/img_diagram.png",
+        "key": {
+            "text": "Find B D if B F bisects \\angle A B C and A C \\parallel E D, B A = 6, B C = 7.5, A C = 9, and D E = 9. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2737/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2740/img_diagram.png",
+        "key": {
+            "text": "In \\odot S, m \\widehat P Q R = 98. Find m \\widehat P Q. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2914/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2880/img_diagram.png",
+        "key": {
+            "text": "In \\odot P, m \\angle M P L = 65 and N P \\perp P L. Find m \\widehat N J K. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2539/img_diagram.png",
+        "key": {
+            "text": "In \\odot M, F L = 24, H J = 48, and m \\widehat H P = 65. Find m \\widehat P J. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2963/img_diagram.png",
+        "key": {
+            "text": "In the figure, C P is an altitude, C Q is the angle bisector of \\angle A C B, and R is the midpoint of A B. Find m \\angle A C Q if m \\angle A C B = 123 - x and m \\angle Q C B = 42 + x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2443/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2819/img_diagram.png",
+        "key": {
+            "text": "Find the area of the rhombus. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2434/img_diagram.png",
+        "key": {
+            "text": "Let G H be the median of R S B A. Find G H. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2533/img_diagram.png",
+        "key": {
+            "text": "Find J Q if Q is the incenter of \\triangle J L N. Rounded to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2969/img_diagram.png",
+        "key": {
+            "text": "The degree measure of minor arc \\widehat A C and major arc \\widehat A D C are x and y respectively. If m \\angle A B C = 70, find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2544/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram J K L M to find m \\angle K L M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2864/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\cos N as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2987/img_diagram.png",
+        "key": {
+            "text": "Find B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2449/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle W. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2813/img_diagram.png",
+        "key": {
+            "text": "Find D E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2761/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2682/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2716/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2688/img_diagram.png",
+        "key": {
+            "text": "Find the value of t in the parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2611/img_diagram.png",
+        "key": {
+            "text": "\\overrightarrow Q P and \\overrightarrow Q R are opposite rays, and \\overrightarrow Q T bisects \\angle S Q R. If m \\angle S Q R = 6 x + 8 and m \\angle T Q R = 4 x - 14, find m \\angle S Q T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2785/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2666/img_diagram.png",
+        "key": {
+            "text": "E B \\parallel D C. Find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2832/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 3. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2468/img_diagram.png",
+        "key": {
+            "text": "Find the measure of the altitude drawn to the hypotenuse. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2845/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 1 = 58, m \\angle 2 = 47, and m \\angle 3 = 26. Find the measure of \\angle 9. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2565/img_diagram.png",
+        "key": {
+            "text": "Find \\tan X. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2948/img_diagram.png",
+        "key": {
+            "text": "In the figure, A D is perpendicular to B C and A B is perpendicular to A C. What is B C? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2486/img_diagram.png",
+        "key": {
+            "text": "Circle O has a radius of 13 inches. Radius O B is perpendicular to chord C D which is 24 inches long. If m \\widehat C D = 134, find m \\widehat C B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2512/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2415/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram M N P R to find m \\angle R N P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2581/img_diagram.png",
+        "key": {
+            "text": "Find x so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2838/img_diagram.png",
+        "key": {
+            "text": "If P R \\parallel K L, K N = 9, L N = 16, P M = 2 K P, find P R. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2462/img_diagram.png",
+        "key": {
+            "text": "A B is a diameter, A C = 8 inches, and B C = 15 inches. Find the radius of the circle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2942/img_diagram.png",
+        "key": {
+            "text": "Find B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2518/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\cos X as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2935/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure in feet. Round to the nearest tenth, if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2724/img_diagram.png",
+        "key": {
+            "text": "\\triangle L M N \\cong \\triangle Q R S. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2753/img_diagram.png",
+        "key": {
+            "text": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2629/img_diagram.png",
+        "key": {
+            "text": "In the figure, m \\angle 9 = 75. Find the measure of \\angle 6. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2759/img_diagram.png",
+        "key": {
+            "text": "Find the area of \\parallelogram J K L M. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2654/img_diagram.png",
+        "key": {
+            "text": "Find the area of the regular polygon figure. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2623/img_diagram.png",
+        "key": {
+            "text": "For trapezoid A B C D, S and T are midpoints of the legs. If A B = x + 4, C D = 3 x + 2, and S T = 9, find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2877/img_diagram.png",
+        "key": {
+            "text": "Find the area of the regular polygon figure. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2994/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that segments that appear to be tangent are tangent. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2800/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2520/img_diagram.png",
+        "key": {
+            "text": "A B \\perp D C and G H \\perp F E. If \\triangle A C D \\sim \\triangle G E F, find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2899/img_diagram.png",
+        "key": {
+            "text": "If C W = W F and E D = 30, what is D F? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2557/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2450/img_diagram.png",
+        "key": {
+            "text": "A plane travels from Des Moines to Phoenix, on to Atlanta, and back to Des Moines, as shown below. Find the distance in miles from Phoenix to Atlanta if the total trip was 3482 miles. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2427/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2907/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle J K L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2893/img_diagram.png",
+        "key": {
+            "text": "Express the ratio of \\cos P as a decimal to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2970/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle W Y Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2550/img_diagram.png",
+        "key": {
+            "text": "In rhombus A B C D, A B = 2 x + 3 and B C = 5 x. Find A D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2527/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2807/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2993/img_diagram.png",
+        "key": {
+            "text": "In \\odot O, E C and A B are diameters, and \\angle B O D \\cong \\angle D O E \\cong \\angle E O F \\cong \\angle F O A. Find m \\widehat A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2870/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2977/img_diagram.png",
+        "key": {
+            "text": "Find G D. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2894/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of the parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2900/img_diagram.png",
+        "key": {
+            "text": "Find the area of the triangle. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2420/img_diagram.png",
+        "key": {
+            "text": "Find D E. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2457/img_diagram.png",
+        "key": {
+            "text": "Use a Pythagorean Triple to find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2999/img_diagram.png",
+        "key": {
+            "text": "The square is circumscribed to the circle. Find the exact circumference of the circle. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2659/img_diagram.png",
+        "key": {
+            "text": "Find \\widehat W N if \\triangle I W N is equilateral and W N = 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2754/img_diagram.png",
+        "key": {
+            "text": "Find the value of the variable x in the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2723/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2624/img_diagram.png",
+        "key": {
+            "text": "m \\angle 9 = 2 x - 4, m \\angle 10 = 2 x + 4. Find the measure of \\angle 10. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2653/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral W X Y Z is a rectangle. Find the measure of \\angle 6 if m \\angle 1 = 30. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2729/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram M N P R to find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2515/img_diagram.png",
+        "key": {
+            "text": "\\triangle R S T \\cong \\triangle A B C. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2481/img_diagram.png",
+        "key": {
+            "text": "\\odot P \\cong \\odot Q. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2938/img_diagram.png",
+        "key": {
+            "text": "Find the value of x in the diagram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2562/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2842/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find m \\angle D A C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2418/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram A B C D to find m \\angle A D C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2835/img_diagram.png",
+        "key": {
+            "text": "A square is inscribed in a circle of area 18 \\pi square units. Find the length of a side of the square. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2932/img_diagram.png",
+        "key": {
+            "text": "For trapezoid A B C D, S and T are midpoints of the legs. If C D = 14, S T = 10, and A B = 2 x, find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2568/img_diagram.png",
+        "key": {
+            "text": "Find x in the parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2945/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle H. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2465/img_diagram.png",
+        "key": {
+            "text": "Lines l, m, and n are perpendicular bisectors of \\triangle P Q R and meet at T. If T Q = 2 x, P T = 3 y - 1, and T R = 8, find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2586/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2848/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2412/img_diagram.png",
+        "key": {
+            "text": "J K L M is a rectangle. M L P R is a rhombus. \\angle J M K \\cong \\angle R M P, m \\angle J M K = 55, and m \\angle M R P = 70. Find m \\angle K M L. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2788/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2711/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2685/img_diagram.png",
+        "key": {
+            "text": "Find y so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2766/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2661/img_diagram.png",
+        "key": {
+            "text": "Find the measure of the altitude drawn to the hypotenuse. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2782/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2616/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that segments that appear to be tangent are tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2433/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2869/img_diagram.png",
+        "key": {
+            "text": "Find x. A = 148 m^2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2444/img_diagram.png",
+        "key": {
+            "text": "Find x. Round to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2964/img_diagram.png",
+        "key": {
+            "text": "Find z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2549/img_diagram.png",
+        "key": {
+            "text": "If A E = m - 2, E C = m + 4, A D = 4, and A B = 20, find m. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2887/img_diagram.png",
+        "key": {
+            "text": "In \\odot F, F H \\cong F L and F K = 17. Find J G. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2913/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2814/img_diagram.png",
+        "key": {
+            "text": "If W X Y Z is a kite, find W P. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2980/img_diagram.png",
+        "key": {
+            "text": "Find the length of \\widehat Z Y. Round to the nearest hundredth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2439/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle R S T. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2863/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle 7 if m \\angle 4 = m \\angle 5. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2543/img_diagram.png",
+        "key": {
+            "text": "Find the perimeter of \\triangle B C D, if \\triangle B C D \\sim \\triangle F D E, C D = 12, F D = 5, F E = 4, and D E = 8. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2919/img_diagram.png",
+        "key": {
+            "text": "One diagonal of a rhombus is twice as long as the other diagonal. If the area of the rhombus is 169 square millimeters, what are the lengths of the diagonals? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2534/img_diagram.png",
+        "key": {
+            "text": "E B \\parallel D C. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2637/img_diagram.png",
+        "key": {
+            "text": "What is the value of x below to the nearest tenth? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2640/img_diagram.png",
+        "key": {
+            "text": "Find x. Assume that any segment that appears to be tangent is tangent. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2747/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Round to the nearest hundredth, if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2730/img_diagram.png",
+        "key": {
+            "text": "Each pair of polygons is similar. Find G F. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2476/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram M N P R to find m \\angle R M N. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2595/img_diagram.png",
+        "key": {
+            "text": "The diameter of \\odot S is 30 units, the diameter of \\odot R is 20 units, and D S = 9 units. Find R C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2401/img_diagram.png",
+        "key": {
+            "text": "Find the area of the figure. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2921/img_diagram.png",
+        "key": {
+            "text": "Find the measure of \\angle T to the nearest tenth. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2498/img_diagram.png",
+        "key": {
+            "text": "Find m \\angle 1. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2956/img_diagram.png",
+        "key": {
+            "text": "Find A B. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2851/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2826/img_diagram.png",
+        "key": {
+            "text": "Quadrilateral W X Y Z is a rectangle. Find the measure of \\angle 3 if m \\angle 1 = 30. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2506/img_diagram.png",
+        "key": {
+            "text": "Use parallelogram J K L M to find m \\angle K J L if J K = 2 b + 3 and J M = 3 a. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2492/img_diagram.png",
+        "key": {
+            "text": "A B \\cong D F. Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2571/img_diagram.png",
+        "key": {
+            "text": "Find x. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2708/img_diagram.png",
+        "key": {
+            "text": "Find the area of the parallelogram. Round to the nearest tenth if necessary. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2672/img_diagram.png",
+        "key": {
+            "text": "Find y. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2791/img_diagram.png",
+        "key": {
+            "text": "Find a, if F G = 18, G H = 42, and F K = 15. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2605/img_diagram.png",
+        "key": {
+            "text": "m \\widehat A C = 160 and m \\angle B E C = 38. What is m \\angle A E B? Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2702/img_diagram.png",
+        "key": {
+            "text": "In \\triangle P Q R, Z Q = 3 a - 11, Z P = a + 5, P Y = 2 c - 1, Y R = 4 c - 11, m \\angle P R Z = 4 b - 17, m \\angle Z R Q = 3 b - 4, m \\angle Q Y R = 7 b + 6, and m \\angle P X R = 2 a + 10. If R Z is an angle bisector, find m \\angle P R Z. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "D"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2696/img_diagram.png",
+        "key": {
+            "text": "Find the length of A C in the isosceles triangle A B C. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "B"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2775/img_diagram.png",
+        "key": {
+            "text": "Find x so that the quadrilateral is a parallelogram. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "A"
+        }
+    },
+    {
+        "image": "/home/raychai/geometry/2678/img_diagram.png",
+        "key": {
+            "text": "m \\angle 2 = 2 x, m \\angle 3 = x. Find m \\angle 2. Given <image> and 4 choices, ABCD, which one do you choose? Return A, B, C, or D."
+        },
+        "value": {
+            "text": "C"
+        }
+    }
+]
